@@ -3,17 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/static/css/styles.css">
+  <link rel="stylesheet" href="./static/css/styles.css">
   <script type="module" src="./static/js/index.js"></script>
 </head>
 <body>
   <header>
     <nav>
-      <a href="/" data-link>Home</a>
-      <a href="/work" data-link>Work</a>
-      <a href="/settings" data-link>Settings</a>
+      <div class="logo-container">
+        <label class="logo-txt">LOGO</label>
+      </div>
+
+      <input type="checkbox" id="check" />
+      <label for="check" class="hamburger-btn">
+        <span class="bar"></span>
+      </label>
+
+      <ul class="menu" id="menu">
+        <li><a href="/" class="active" data-link>About</a></li>
+        <li><a href="/work" data-link>Work</a></li>
+        <li><a href="/contact" data-link>Contact</a></li>
+      </ul>
     </nav>
-    
   </header>
   
   <main id="app">

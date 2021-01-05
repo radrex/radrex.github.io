@@ -1,0 +1,18 @@
+/*------------- IMPORTS -------------*/
+@import './reset.css';
+@import './variables.css';
+@import './typography.css';
+@import './menu.css';
+
+/*---------- MEDIA QUERIES ----------*/
+@media(min-width: 500px) {
+  html { font-size: var(--font-size-small, 14px) };
+}
+
+@media(min-width: 700px) {
+  html { font-size: var(--font-size-medium, 16px) };
+}
+
+@media(min-width: 1600px) {
+  html { font-size: var(--font-size-large, 18px) };
+}

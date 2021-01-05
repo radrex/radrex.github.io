@@ -8,7 +8,7 @@ export default class extends BaseView {
 
   async getHtml() {
     return `
-      <h1>Welcome back, Dom</h1>
+      <h1>Hello, my name is Radostin</h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi purus libero, viverra eget mollis ut, viverra et est. Cras eget odio sed lorem vestibulum scelerisque.</p>
       <p>
         <a href="/work" data-link>View recent projects</a>.

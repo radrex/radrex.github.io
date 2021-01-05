@@ -1,0 +1,145 @@
+/*---------- HAMBURGER MENU ---------*/
+nav {
+  height: 75px;
+  width: 100%;
+  background-color: var(--gray1);
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  width: auto;
+  margin: 0;
+}
+
+.logo-txt {
+  margin-left: 20px;
+  padding-left: 18px;
+  font-size: 30px;
+  line-height: 75px;
+  font-weight: bold;
+  color:white;
+}
+
+.menu {
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  width: 100%;
+  height: 0vh; /* shrinked */
+  top: 75px;
+  background: var(--bluish-gray2);
+  float: right;
+  text-align: center;
+  transition: all .5s;
+}
+
+.menu li {
+  opacity: 0; /* invisible */
+  line-height: 30px;
+  margin: 50px 0;
+  transition: all .5s;
+}
+
+.menu li a {
+  color: var(--light-orange);
+  font-size: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.menu li a.active,.menu li a:hover {
+  color: var(--dark-orange);
+  transition: 0.5s;
+}
+
+.hamburger-btn {
+  display: flex;
+  align-items: center;
+  width: auto;
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 75px;
+  margin-right: 48px;
+  cursor: pointer;
+}
+
+.bar {
+  background: var(--dark-orange);
+  display: block;
+  height: 2px;
+  width: 18px;
+  position: relative;
+  transition: background .2s ease-out;
+}
+
+.bar::before {
+  background: var(--dark-orange);
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 5px;
+}
+
+.bar::after {
+  background: var(--dark-orange);
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: -5px;
+}
+
+#check {
+  display: none;
+}
+
+#check:checked ~ .menu {
+  height: 100vh; /* expanded */
+}
+
+#check:checked ~ .menu li {
+  opacity: 1; /* visible when checked */
+}
+
+/*---------- DESKTOP ---------*/
+@media only screen and (min-width: 900px) {
+  nav {
+    height: 100px;
+  }
+
+  .hamburger-btn {
+    display: none;
+  }
+
+  .menu {
+    position: relative;
+    height: 100px;
+    top: 0;
+    background: none;
+    float: right;
+    text-align: right;
+    margin-right: 25px;
+    transition: none;
+  }
+
+  .menu li {
+    display: inline-block;
+    opacity: 1;
+    line-height: 100px;
+    margin: 0 20px;
+    transition: none;
+  }
+
+  .menu li a.active, .menu li a:hover {
+    color: var(--dark-orange);
+    transition: 0.5s;
+  }
+}
+

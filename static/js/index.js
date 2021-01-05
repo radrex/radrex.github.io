@@ -1,7 +1,7 @@
 import Home from './views/Home.js';
 import Work from './views/Work.js';
 import Project from './views/Project.js';
-import Settings from './views/Settings.js';
+import Contact from './views/Contact.js';
 
 const pathToRegex = path => new RegExp('^' + path.replace(/\//g, '\\/').replace(/:\w+/g, '(.+)') + "$");
 const getParams = match => {
@@ -25,7 +25,7 @@ const router = async () => {
     { path: '/', view: Home },
     { path: '/work', view: Work },
     { path: '/project/:id', view: Project },
-    { path: '/settings', view: Settings },
+    { path: '/contact', view: Contact },
   ];
 
   // Test each route for potential match
@@ -59,4 +59,13 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   router();
+});
+
+//------------------------- HAMBURGER MENU -----------------------------------
+document.getElementById('menu').addEventListener('click', function(evt) {
+  if (evt.target && evt.target.nodeName === 'A') {
+    evt.currentTarget.getElementsByClassName('active')[0].classList.remove('active');
+    evt.target.classList.add('active');
+    document.getElementById('check').checked = false;
+  }
 });

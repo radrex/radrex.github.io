@@ -1,0 +1,20 @@
+:root {
+  --font-size-base: 12px;
+  --font-size-small: 14px;
+  --font-size-medium: 16px;
+  --font-size-large: 18px;
+
+  --main-font-color: #A9A9A9;
+  --gray1: #252525;
+  --gray2: #0D0D0D;
+  --bluish-gray: #020910;
+  --bluish-gray2: #051627;
+
+  --darkish: #000000;
+
+  --blue: #19589F;
+  --light-blue: #93B1CE;
+  --light-orange: #F8A300;
+  --dark-orange: #AD4E00;
+  --light-green: #4DBC36;
+}
