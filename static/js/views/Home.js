@@ -13,6 +13,11 @@ export default class extends BaseView {
       <p>
         <a href="/work" data-link>View recent projects</a>.
       </p>
+
+      <ul>
+        Attributions:
+        <li><a target="_blank" href="https://icons8.com/icons/set/laptop-coding">Laptop Coding icon</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a></li>
+      </ul>
     `;
   }
 }

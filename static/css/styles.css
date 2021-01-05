@@ -4,6 +4,14 @@
 @import './typography.css';
 @import './menu.css';
 
+/*---------- STYLES ----------*/
+
+#app {
+  color: var(--color-light-orange);
+  background-color: var(--color-dark-gray);
+  box-shadow: inset 0px 0px 30px rgba(0,0,0, 8);
+}
+
 /*---------- MEDIA QUERIES ----------*/
 @media(min-width: 500px) {
   html { font-size: var(--font-size-small, 14px) };

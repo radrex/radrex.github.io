@@ -24,8 +24,10 @@
 }
 
 html {
-  font: var(--font-size-base)/1.5 'Open Sans', sans-serif;
+  font: var(--font-size-small)/1.5 'Open Sans', sans-serif;
 }
+
+
 
 /* h1 { font-size: 3em; }
 h2 { font-size: 2em; }

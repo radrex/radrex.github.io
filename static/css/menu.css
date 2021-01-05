@@ -1,117 +1,97 @@
-/*---------- HAMBURGER MENU ---------*/
+/*---------- HAMBURGER MENU --- MOBILE FIRST ---------*/
 nav {
-  height: 75px;
-  width: 100%;
-  background-color: var(--gray1);
   display: flex;
+  align-items: center;
   justify-content: space-between;
+  
+  position: sticky;
+  width: 100vw; /* full screen */
+  height: 80px; /* because icon is 64x64px */
+  background-color: var(--color-gray);
 }
 
 .logo-container {
   display: flex;
   align-items: center;
   width: auto;
-  margin: 0;
 }
+  .logo-container > img {
+    margin-left: 15px; /* margin for logo img from the left side */
+  }
 
-.logo-txt {
-  margin-left: 20px;
-  padding-left: 18px;
-  font-size: 30px;
-  line-height: 75px;
-  font-weight: bold;
-  color:white;
-}
-
-.menu {
-  margin: 0;
-  padding: 0;
-  position: fixed;
-  width: 100%;
-  height: 0vh; /* shrinked */
-  top: 75px;
-  background: var(--bluish-gray2);
-  float: right;
-  text-align: center;
-  transition: all .5s;
-}
-
-.menu li {
-  opacity: 0; /* invisible */
-  line-height: 30px;
-  margin: 50px 0;
-  transition: all .5s;
-}
-
-.menu li a {
-  color: var(--light-orange);
-  font-size: 20px;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-
-.menu li a.active,.menu li a:hover {
-  color: var(--dark-orange);
-  transition: 0.5s;
-}
-
-.hamburger-btn {
-  display: flex;
-  align-items: center;
-  width: auto;
-  font-size: 30px;
-  color: white;
-  float: right;
-  line-height: 75px;
-  margin-right: 48px;
-  cursor: pointer;
-}
-
-.bar {
-  background: var(--dark-orange);
-  display: block;
-  height: 2px;
-  width: 18px;
-  position: relative;
-  transition: background .2s ease-out;
-}
-
-.bar::before {
-  background: var(--dark-orange);
-  content: "";
-  display: block;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 5px;
-}
-
-.bar::after {
-  background: var(--dark-orange);
-  content: "";
-  display: block;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: -5px;
-}
-
-#check {
+#menu-toggler {
   display: none;
 }
 
-#check:checked ~ .menu {
+#menu-toggler:checked ~ .menu {
   height: 100vh; /* expanded */
 }
 
-#check:checked ~ .menu li {
-  opacity: 1; /* visible when checked */
+#menu-toggler:checked ~ .menu li {
+  display: block; /* visible when checked */
 }
+
+.hamburger-btn {
+  padding: 16px 10px;  /* to be able to click the hamburger a little bit out of it */
+  margin-right: 15px; /* margin for hamburger btn from the right side*/
+  cursor: pointer;
+}
+  .hamburger-slice { /* slice 2 */
+    width: 18px;
+    height: 2px;
+    display: block;
+    position: relative;
+    background: var(--color-dark-orange);
+  }
+  .hamburger-slice::before {  /* slice 1 */
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 5px;
+    content: "";
+    background: var(--color-dark-orange);
+  }
+  .hamburger-slice::after { /* slice 3 */
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: -5px;
+    content: "";
+    background: var(--color-dark-orange);
+  }
+
+.menu {
+  top: 80px;
+  position: fixed;
+  width: 100vw; /* full screen */
+  height: 0vh; /* shrinked/hidden */
+  text-align: center;
+  transition: all .5s;
+  background: var(--color-dark-blue);
+}
+  .menu li {
+    display: none; /* invisible  */
+    margin: 50px 0;
+    line-height: 30px;
+    transition: all .5s;
+  }
+    .menu li a {
+      font-size: var(--font-size-extra-large);
+      text-decoration: none;
+      text-transform: uppercase;
+      color: var(--color-light-orange);
+    }
+      .menu li a.active,.menu li a:hover {
+        transition: 0.5s;
+        color: var(--color-dark-orange);
+      }
 
 /*---------- DESKTOP ---------*/
 @media only screen and (min-width: 900px) {
   nav {
-    height: 100px;
+    height: 100px;  /* a little bit larger for desktop */
   }
 
   .hamburger-btn {
@@ -120,26 +100,23 @@ nav {
 
   .menu {
     position: relative;
-    height: 100px;
     top: 0;
-    background: none;
-    float: right;
-    text-align: right;
+    height: 100px;
     margin-right: 25px;
+    float: right;
     transition: none;
+    background: none;
+    text-align: right;
   }
-
-  .menu li {
-    display: inline-block;
-    opacity: 1;
-    line-height: 100px;
-    margin: 0 20px;
-    transition: none;
-  }
-
-  .menu li a.active, .menu li a:hover {
-    color: var(--dark-orange);
-    transition: 0.5s;
-  }
+    .menu li {
+      margin: 0 20px;
+      line-height: 100px;
+      display: inline-block;
+      transition: none;
+    }
+      .menu li a.active, .menu li a:hover {
+        transition: 0.5s;
+        color: var(--color-dark-orange);
+      }
 }
 

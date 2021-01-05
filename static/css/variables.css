@@ -1,20 +1,21 @@
 :root {
-  --font-size-base: 12px;
+  /*------- FONT SIZE -------*/
   --font-size-small: 14px;
   --font-size-medium: 16px;
   --font-size-large: 18px;
+  --font-size-extra-large: 22px;
+
+  /*--------- COLORS --------*/
+  --color-light-orange: #F8A300;
+  --color-dark-orange: #AD4E00;
+  --color-gray: #252525;
+  --color-dark-gray: #1D1E19;
+  --color-light-green: #4DBC36;
+  --color-light-blue: #93B1CE;
+  --color-blue: #19589F;
+  --color-dark-blue: #051627;
 
   --main-font-color: #A9A9A9;
-  --gray1: #252525;
-  --gray2: #0D0D0D;
   --bluish-gray: #020910;
-  --bluish-gray2: #051627;
-
   --darkish: #000000;
-
-  --blue: #19589F;
-  --light-blue: #93B1CE;
-  --light-orange: #F8A300;
-  --dark-orange: #AD4E00;
-  --light-green: #4DBC36;
 }

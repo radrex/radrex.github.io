@@ -66,6 +66,6 @@ document.getElementById('menu').addEventListener('click', function(evt) {
   if (evt.target && evt.target.nodeName === 'A') {
     evt.currentTarget.getElementsByClassName('active')[0].classList.remove('active');
     evt.target.classList.add('active');
-    document.getElementById('check').checked = false;
+    document.getElementById('menu-toggler').checked = false;
   }
 });
