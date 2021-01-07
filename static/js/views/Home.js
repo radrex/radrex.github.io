@@ -8,11 +8,25 @@ export default class extends BaseView {
 
   async getHtml() {
     return `
-      <h1>Hello, my name is Radostin</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi purus libero, viverra eget mollis ut, viverra et est. Cras eget odio sed lorem vestibulum scelerisque.</p>
+      <h1>Hey, I'm Radostin.</h1>
+      <h3>A web developer based in Sofia, Bulgaria.</h3>
+      
+      <a class="btn" href="/work" data-link>My Projects</a>
+
       <p>
         <a href="/work" data-link>View recent projects</a>.
       </p>
+
+
+
+
+
+
+
+
+
+
+
 
       <ul>
         Attributions:

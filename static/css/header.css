@@ -1,4 +1,8 @@
 /*---------- HAMBURGER MENU --- MOBILE FIRST ---------*/
+header {
+  display: unset;
+}
+
 nav {
   display: flex;
   align-items: center;
