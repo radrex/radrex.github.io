@@ -1,16 +1,21 @@
 @font-face {
-  font-family: 'Open Sans';
-  src: url('../fonts/OpenSans-Regular.ttf') format('truetype');
+  font-family: 'Rubik Light';
+  src: url('../fonts/Rubik-Light.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: 'Open Sans SemiBold';
-  src: url('../fonts/OpenSans-SemiBold.ttf') format('truetype');
+  font-family: 'Rubik Light Italic';
+  src: url('../fonts/Rubik-LightItalic.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: 'Open Sans Bold';
-  src: url('../fonts/OpenSans-Bold.ttf') format('truetype');
+  font-family: 'Rubik Regular';
+  src: url('../fonts/Rubik-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Rubik Regular Italic';
+  src: url('../fonts/Rubik-Italic.ttf') format('truetype');
 }
 
 @font-face {
@@ -23,13 +28,41 @@
   src: url('../fonts/UbuntuMono-Bold.ttf') format('truetype');
 }
 
+/*---------------------------- MOBILE FIRST ----------------------------*/
 html {
-  font: var(--font-size-small)/1.5 'Open Sans', sans-serif;
+  color: var(--color-light-orange);
+  font: var(--font-size-small)/1.5 'Rubik Regular', sans-serif;
+  text-shadow: -2px -2px 3px rgba(0, 0, 0, 1);
 }
 
+main, footer {
+  padding: 15px;
+}
 
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 100;
+}
 
-/* h1 { font-size: 3em; }
-h2 { font-size: 2em; }
+h1 {
+  font-size: 2.0rem;
+}
 
-p { margin: 1em 0; } */
+h2 {
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+}
+
+h4 {
+  font-size: 1.4rem;
+}
+
+h5 {
+  font-size: 1.2rem;
+}
+
+h6 {
+  font-size: 1.0rem;
+}

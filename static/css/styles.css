@@ -2,15 +2,42 @@
 @import './reset.css';
 @import './variables.css';
 @import './typography.css';
-@import './menu.css';
+@import './header.css';
+@import './footer.css';
 
 /*---------- STYLES ----------*/
-
 #app {
-  color: var(--color-light-orange);
+  height: 80vh; /*subject to change*/
   background-color: var(--color-dark-gray);
   box-shadow: inset 0px 0px 30px rgba(0,0,0, 8);
 }
+
+
+
+
+
+
+
+
+
+
+/*---------- BUTTONS ----------*/
+.btn {
+  padding: 5px 8px;
+  color: var(--color-light-orange);
+  font-size: var(--font-size-medium);
+  background-color: var(--color-dark-gray);
+  border-radius:10px;
+  border: 2px solid var(--color-dark-orange);
+  box-shadow: 0px 0px 10px 4px rgba(0,0,0,0.5);
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  transition-duration: 0.4s;
+}
+  .btn:hover {
+    background-color: black;
+  }
 
 /*---------- MEDIA QUERIES ----------*/
 @media(min-width: 500px) {
