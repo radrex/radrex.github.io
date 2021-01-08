@@ -29,40 +29,52 @@
 }
 
 /*---------------------------- MOBILE FIRST ----------------------------*/
-html {
+body {
   color: var(--color-light-orange);
-  font: var(--font-size-small)/1.5 'Rubik Regular', sans-serif;
   text-shadow: -2px -2px 3px rgba(0, 0, 0, 1);
+  font: var(--font-size-small)/1.5 'Rubik Regular', sans-serif; /* 14px */ /*Change font size variable in media queries to affect other elements*/
+}
+
+header {
+  font-size: 2.0em; /* 28px */
 }
 
 main, footer {
-  padding: 15px;
+  font-size: 1.0em; /* 14px */
+  padding: 1.5em;
+}
+
+main {
+  height: 1500px; /*subject to change*/
+  background-color: var(--color-dark-gray);
+  box-shadow: inset 0px 0px 30px rgba(0,0,0,8);
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 100;
+  margin-bottom: 0.4em; /* em calculated of its own font-size, so it will be different for each heading */
 }
 
 h1 {
-  font-size: 2.0rem;
+  font-size: 2.5em; /* 35px */
 }
 
 h2 {
-  font-size: 1.8rem;
+  font-size: 2.0em; /* 28px */
 }
 
 h3 {
-  font-size: 1.6rem;
+  font-size: 1.8em; /* 25px */
 }
 
 h4 {
-  font-size: 1.4rem;
+  font-size: 1.6em; /* 22px */
 }
 
 h5 {
-  font-size: 1.2rem;
+  font-size: 1.4em; /* 20px */
 }
 
 h6 {
-  font-size: 1.0rem;
+  font-size: 1.2em; /* 17px */
 }

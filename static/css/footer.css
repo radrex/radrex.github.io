@@ -5,7 +5,7 @@ footer {
   flex-direction: row;
   justify-content: space-between;
 
-  height: 150px; /*subject to change*/
+  height: 250px; /*subject to change*/
   background-color: var(--color-gray);
 }
   footer p, footer h3 {
@@ -27,7 +27,7 @@ footer {
   }
 
   .footer-social svg:hover g {
-    fill: black;
+    fill: var(--color-black);
   }
 
   .footer-rights {

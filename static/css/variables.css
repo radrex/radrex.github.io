@@ -8,14 +8,16 @@
   /*--------- COLORS --------*/
   --color-light-orange: #F8A300;
   --color-dark-orange: #AD4E00;
+
   --color-gray: #252525;
   --color-dark-gray: #1D1E19;
-  --color-light-green: #4DBC36;
+
   --color-light-blue: #93B1CE;
   --color-blue: #19589F;
+
   --color-dark-blue: #051627;
 
-  --main-font-color: #A9A9A9;
-  --bluish-gray: #020910;
-  --darkish: #000000;
+  --color-light-green: #4DBC36;
+
+  --color-black: #0F0E0E;
 }

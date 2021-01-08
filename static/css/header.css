@@ -3,7 +3,7 @@ header {
   display: unset;
 }
 
-nav {
+header > nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -82,7 +82,7 @@ nav {
     transition: all .5s;
   }
     .menu li a {
-      font-size: var(--font-size-extra-large);
+      /* font-size: var(--font-size-extra-large);  using em in header*/
       text-decoration: none;
       text-transform: uppercase;
       color: var(--color-light-orange);
