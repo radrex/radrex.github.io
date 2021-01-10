@@ -17,6 +17,8 @@ export default class extends BaseView {
         <div class="responsive-img"></div>
       </div>
 
+      <h2>Featured Projects</h2>
+
       <ul>
         Attributions:
         <li><a target="_blank" href="https://icons8.com/icons/set/laptop-coding">Laptop Coding icon</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a></li>

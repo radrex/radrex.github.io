@@ -29,10 +29,20 @@
 }
 
 /*---------------------------- MOBILE FIRST ----------------------------*/
+* {
+  box-sizing: border-box;
+}
+
 body {
   color: var(--color-light-orange);
   text-shadow: -2px -2px 3px rgba(0, 0, 0, 1);
   font: var(--font-size-small)/1.5 'Rubik Regular', sans-serif; /* 14px */ /*Change font size variable in media queries to affect other elements*/
+}
+
+input, textarea, button, select { /* By default, browsers render most form elements (textareas, text boxes, buttons, etc) using OS controls or browser controls. So most of the font properties are taken from the theme the OS is currently using. By setting them to inherit they will take the body properties. */
+  font:inherit;
+  color:inherit;
+  text-shadow: inherit;
 }
 
 header {
@@ -46,7 +56,7 @@ main, footer {
 
 main {
   height: 1500px; /*subject to change*/
-  background-color: var(--color-dark-gray);
+  background:url('../images/shattered-dark.png') repeat black;
   box-shadow: inset 0px 0px 30px rgba(0,0,0,8);
 }
 

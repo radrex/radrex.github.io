@@ -45,7 +45,9 @@ const router = async () => {
   }
 
   const view = new match.route.view(getParams(match));
-  document.querySelector('#app').innerHTML = await view.getHtml();
+  let mainElement = document.querySelector('#app');
+  mainElement.className = `${location.pathname == '/' ? 'home' : location.pathname.slice(1)}`; /* setting class for the current page (for easier CSS styling) */
+  mainElement.innerHTML = await view.getHtml();
 };
 
 window.addEventListener('popstate', router);
