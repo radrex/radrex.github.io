@@ -64,24 +64,39 @@ document.addEventListener('DOMContentLoaded', () => {
   document.body.addEventListener('submit', async function(evt) {
     evt.preventDefault();
     let data = new FormData(document.forms['send-message-form']);
+
     let messageData = {
       name: data.get('name'),
       email: data.get('email'),
       message: data.get('message'),
     }
-    
-    await fetch(`${process.env.FORMSPREE_ENDPOINT}`, {
-      method: 'POST',
-      headers: { 
-        'Content-Type': 'application/json',
-        'Accept': 'application/json' 
-      },
-      body: JSON.stringify(messageData),
-    })
-    .then(res => console.log(res))
-    .catch(err => console.log(err));
 
-    navigateTo('/contact');
+    let regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    //validate input
+    if (messageData.name === '') {
+      displayError("⛔ What's your name again? 🤨", 'invalid-name');
+    } else if (messageData.name.length > 25) {
+      displayError("⛔ Just pick a nickname 😑", 'invalid-name');
+    } else if (messageData.email === '') {
+      displayError("⛔ How Am I supposed to reach you? 📭", 'invalid-email');
+    } else if (!regex.test(messageData.email)) {
+      displayError("⛔ Don't try to hack me, that's my job 🐱‍👤", 'invalid-email');
+    } else if (messageData.message === '') {
+      displayError("⛔ Go on, say something... It`s not that hard 🎙️", 'invalid-message');
+    } else {
+      await fetch('https://formspree.io/f/xvovdlno', {
+        method: 'POST',
+        headers: { 
+          'Content-Type': 'application/json',
+          'Accept': 'application/json' 
+        },
+        body: JSON.stringify(messageData),
+      })
+      .then(displayInfo('Me when I receive message from you 👁️👄👁️', 'successfully-send'))
+      .catch(err => console.log(err));
+  
+      navigateTo('/contact');
+    }
   });
 
   router();
@@ -95,3 +110,31 @@ document.getElementById('menu').addEventListener('click', function(evt) {
     document.getElementById('menu-toggler').checked = false;
   }
 });
+
+function displayError(message, id) {
+  //TODO - font-size and transitions for higher resolutions (media-queries)
+  let errorBox = document.getElementById(id);
+  let oldPlaceholder = errorBox.placeholder;
+
+  errorBox.style.fontSize = '70%';
+  errorBox.value = '';
+  errorBox.placeholder = message;
+
+  setTimeout(() => {
+    errorBox.style.fontSize = '100%';
+    errorBox.placeholder = oldPlaceholder;
+  }, 2000);
+}
+
+function displayInfo(message, id) {
+  //TODO - font-size and transitions for higher resolutions (media-queries)
+  let infoBox = document.getElementById(id);
+  let oldValue = infoBox.value;
+  infoBox.style.fontSize = '70%';
+
+  infoBox.value = message;
+  setTimeout(() => {
+    infoBox.style.fontSize = '100%';
+    infoBox.value = oldValue;
+  }, 5000);
+}
