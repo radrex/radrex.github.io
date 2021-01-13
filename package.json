@@ -17,7 +17,7 @@
     "url": "https://github.com/radrex/radrex.github.io/issues"
   },
   "homepage": "https://github.com/radrex/radrex.github.io#readme",
-  "dependencies": {
+  "devDependencies": {
     "express": "^4.17.1"
   }
 }

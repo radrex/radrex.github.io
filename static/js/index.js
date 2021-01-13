@@ -60,6 +60,30 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
+  //-------------------------- CONTACT FORM ------------------------------------
+  document.body.addEventListener('submit', async function(evt) {
+    evt.preventDefault();
+    let data = new FormData(document.forms['send-message-form']);
+    let messageData = {
+      name: data.get('name'),
+      email: data.get('email'),
+      message: data.get('message'),
+    }
+    
+    await fetch(`${process.env.FORMSPREE_ENDPOINT}`, {
+      method: 'POST',
+      headers: { 
+        'Content-Type': 'application/json',
+        'Accept': 'application/json' 
+      },
+      body: JSON.stringify(messageData),
+    })
+    .then(res => console.log(res))
+    .catch(err => console.log(err));
+
+    navigateTo('/contact');
+  });
+
   router();
 });
 

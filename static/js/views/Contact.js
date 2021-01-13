@@ -18,11 +18,10 @@ export default class extends BaseView {
           <div class="mac-btn green"></div>
         </div>
         <div class="window-body">
-          <form action="" method="POST">   
+          <form id="send-message-form" method="POST">   
             <input name="name" type="text" placeholder="Name" />
-            <input name="email" type="text" placeholder="Email" />
-            <textarea name="text" placeholder="Message"></textarea>
-            
+            <input name="email" type="email" placeholder="Email" />
+            <textarea name="message" placeholder="Message"></textarea>
             <input type="submit" value="Send" />
           </form>
         </div>
