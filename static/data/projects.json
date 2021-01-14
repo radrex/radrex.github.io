@@ -1,0 +1,25 @@
+{
+  "1": {
+    "title": "Softuni Courses",
+    "definition" : "Personal code from Softuni"
+,   "description": "A repository containing different task solutions and projects in regards to my learning experience at Software University. The majority of tasks can be evaluated in judge assessment system at softuni.bg.",
+    "link": "tes",
+    "github": "https://github.com/radrex/SoftuniCourses",
+
+    "functionality": [
+      {
+        "name": "Programming Basics",
+        "description": "Programming basics tasks written in C#",
+        "gif": "gifURL"
+      },
+      {
+        "name": "C# Web Developer Module",
+        "description": "C# Advanced, C# DB, C# Web",
+        "gif": "gifURL"
+      }
+    ],
+
+    "previewImg": "previewImgLink",
+    "techStack": ["ASP.NET", "Bootstrap"]
+  }
+}

@@ -11,6 +11,12 @@ export default class extends BaseView {
       <h1>Contact Me</h1>
       <h2>If you’d like to chat about a project please fill in the form below and I’ll get back within 1-2 days.</h2>
     
+      <section class="border-box">
+        <h3>Status</h3>
+        <h4>Available</h4>
+        <p>I'm currently looking for a job and taking on side projects.</p>
+      </section>
+
       <section class="mac-window">
         <div class="buttons">
           <div class="mac-btn red"></div>
@@ -22,7 +28,7 @@ export default class extends BaseView {
             <input id="invalid-name" name="name" type="text" placeholder="Name" />
             <input id="invalid-email" name="email" type="text" placeholder="Email" />
             <textarea id="invalid-message" name="message" placeholder="Message"></textarea>
-            <input id="successfully-send" type="submit" value="Send" />
+            <input id="successfully-send" type="submit" value="Send Message" />
           </form>
         </div>
       </section>

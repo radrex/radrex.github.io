@@ -34,7 +34,7 @@
 }
 
 body {
-  color: var(--color-light-orange);
+  color: var(--font-color);
   text-shadow: -2px -2px 3px rgba(0, 0, 0, 1);
   font: var(--font-size-small)/1.5 'Rubik Regular', sans-serif; /* 14px */ /*Change font size variable in media queries to affect other elements*/
 }
@@ -63,6 +63,7 @@ main {
 h1, h2, h3, h4, h5, h6 {
   font-weight: 100;
   margin-bottom: 0.4em; /* em calculated of its own font-size, so it will be different for each heading */
+  color: var(--color-light-orange);
 }
 
 h1 {

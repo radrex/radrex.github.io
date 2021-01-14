@@ -46,13 +46,14 @@ const router = async () => {
 
   const view = new match.route.view(getParams(match));
   let mainElement = document.querySelector('#app');
-  mainElement.className = `${location.pathname == '/' ? 'home' : location.pathname.slice(1)}`; /* setting class for the current page (for easier CSS styling) */
+  mainElement.className = `${location.pathname === '/' ? 'home' : location.pathname.includes('project/') ? 'project' : location.pathname.slice(1)}`; /* setting class for the current page (for easier CSS styling) */
   mainElement.innerHTML = await view.getHtml();
 };
 
 window.addEventListener('popstate', router);
 
 document.addEventListener('DOMContentLoaded', () => {
+  //-------------------------- NAVIGATION EVENT LISTENER ------------------------------------
   document.body.addEventListener('click', evt => {
     if (evt.target.matches('[data-link]')) { // if clicked link has data-link attribute, prevent its default <a> behavior and navigateTo(href)
       evt.preventDefault();
@@ -60,7 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  //-------------------------- CONTACT FORM ------------------------------------
+  //-------------------------- CONTACT FORM EVENT LISTENER ------------------------------------
   document.body.addEventListener('submit', async function(evt) {
     evt.preventDefault();
     let data = new FormData(document.forms['send-message-form']);
@@ -72,7 +73,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     let regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    //validate input
     if (messageData.name === '') {
       displayError("⛔ What's your name again? 🤨", 'invalid-name');
     } else if (messageData.name.length > 25) {
@@ -93,7 +93,7 @@ document.addEventListener('DOMContentLoaded', () => {
         body: JSON.stringify(messageData),
       })
       .then(displayInfo('Me when I receive message from you 👁️👄👁️', 'successfully-send'))
-      .catch(err => console.log(err));
+      .catch(err => console.log(err)); //TODO handle error with a notification or something
   
       navigateTo('/contact');
     }
@@ -102,7 +102,7 @@ document.addEventListener('DOMContentLoaded', () => {
   router();
 });
 
-//------------------------- HAMBURGER MENU -----------------------------------
+//------------------------- HAMBURGER MENU EVENT LISTENER -----------------------------------
 document.getElementById('menu').addEventListener('click', function(evt) {
   if (evt.target && evt.target.nodeName === 'A') {
     evt.currentTarget.getElementsByClassName('active')[0].classList.remove('active');
@@ -111,6 +111,8 @@ document.getElementById('menu').addEventListener('click', function(evt) {
   }
 });
 
+
+//------------------------- NOTIFICATIONS -----------------------------------
 function displayError(message, id) {
   //TODO - font-size and transitions for higher resolutions (media-queries)
   let errorBox = document.getElementById(id);
