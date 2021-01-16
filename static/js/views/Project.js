@@ -23,7 +23,7 @@ export default class extends BaseView {
       <section class="project-showcase">
         ${project.functionality.map(x => `
 
-          <h3><i class="fas fa-code"></i> ${x.name}</h3>
+          <h3>${x.name}</h3>
           <p>${x.description}</p>
           <div class="responsive-img-container" style="padding-bottom:${x.imgHeight / (x.imgWidth / 100)}%">
             <img src="${x.imgUrl}" width="${x.imgWidth}" height="${x.imgHeight}">

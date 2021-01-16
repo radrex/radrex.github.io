@@ -62,22 +62,33 @@
 
 .project-showcase {
   width: 100%;
-  /* text-align: center; */
 }
 
 .project-showcase h3 {
-  border-top: 1px solid black;
+  font-size: 1.7em;
+  letter-spacing: -0.031em;
+  position: relative;
+  margin-top: 2em;
+  box-shadow: inset 0px 15px 25px -19px rgba(0,0,0,0.78);
+  border-radius: 100px 1000px 0;
+  padding: 0 5px;
 }
 
 .project-showcase h3::before {
-  content: '';
-  background-image: url('../images/zig-zag.svg');
-  display: block;
-  height: 100%;
-  width: 100%;
+  position: absolute;
+
+  content: '\f121';
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+  text-align: center;
+  bottom:100%;
+  left: 0;
+  color: var(--font-color);
 }
 
-
+.project-showcase p {
+  padding: 0 5px;
+}
 
 /*----------------------- REUSABLE ITEMS -----------------------*/
 /*---------- BORDER BOX ----------*/
