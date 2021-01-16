@@ -48,24 +48,24 @@ header > nav {
     position: relative;
     background: var(--color-dark-orange);
   }
-  .hamburger-slice::before {  /* slice 1 */
-    width: 100%;
-    height: 100%;
-    display: block;
-    position: absolute;
-    top: 5px;
-    content: "";
-    background: var(--color-dark-orange);
-  }
-  .hamburger-slice::after { /* slice 3 */
-    width: 100%;
-    height: 100%;
-    display: block;
-    position: absolute;
-    top: -5px;
-    content: "";
-    background: var(--color-dark-orange);
-  }
+    .hamburger-slice::before {  /* slice 1 */
+      width: 100%;
+      height: 100%;
+      display: block;
+      position: absolute;
+      top: 5px;
+      content: "";
+      background: var(--color-dark-orange);
+    }
+    .hamburger-slice::after { /* slice 3 */
+      width: 100%;
+      height: 100%;
+      display: block;
+      position: absolute;
+      top: -5px;
+      content: "";
+      background: var(--color-dark-orange);
+    }
 
 .menu {
   top: 80px;

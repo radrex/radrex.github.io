@@ -55,7 +55,7 @@ main, footer {
 }
 
 main {
-  height: 1500px; /*subject to change*/
+  height: 5500px; /*subject to change*/
   background:url('../images/shattered-dark.png') repeat black;
   box-shadow: inset 0px 0px 30px rgba(0,0,0,8);
 }

@@ -62,13 +62,22 @@
 
 .project-showcase {
   width: 100%;
-  text-align: center;
+  /* text-align: center; */
 }
 
-.project-showcase .responsive-img {
-  /* background: url('/static/images/markus-spiske-y6HpQzW87Vc-unsplash.jpg'); */
-  /* FIND A WAY TO PASS THE GIF LOCATION IN THE PROJECT TEMPLATE AND CHANGE IT HERE IF POSSIBLE WITHOUT JS */
+.project-showcase h3 {
+  border-top: 1px solid black;
 }
+
+.project-showcase h3::before {
+  content: '';
+  background-image: url('../images/zig-zag.svg');
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+
 
 /*----------------------- REUSABLE ITEMS -----------------------*/
 /*---------- BORDER BOX ----------*/
@@ -176,21 +185,33 @@ form {
 
 /*---------- IMAGES ----------*/
 .responsive-img-container {
-  max-width: 300px; /* max container size, when reached it stops stretching */
-  margin: 20px auto; /* center */
+  height: 0;
+  position:relative;
+  padding-bottom: 150%; /* Changes depending on img aspect-ratio in the views as inline html */
   background-color: var(--color-gray);
   border: 10px solid var(--color-gray);
   border-radius: 10px;
+  margin: 1.5em auto;
 }
 
-.responsive-img-container > .responsive-img {
-  width: 100%;
-  padding-top: 100%;  /* show 100% of the img starting from the miidle to the top */
-  padding-bottom: 40%; /* show 40% of the img starting from the miidle to the bottom */
-  background: url('/static/images/markus-spiske-y6HpQzW87Vc-unsplash.jpg');
-  background-size: cover; /* keep this under the background */
+.responsive-img-container::after {
   border-radius: 10px;
-  box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.25), inset 0 0 20px 20px rgba(0,0,0,0.5); /* outset shadow + vignette inset shadow */
+  box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.25), inset 0 0 20px 20px rgba(0,0,0,0.5);
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.responsive-img-container img {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position:absolute;
+  border-radius: 10px;
 }
 
 /*---------- BUTTONS ----------*/

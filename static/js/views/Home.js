@@ -14,7 +14,7 @@ export default class extends BaseView {
       <a class="btn btn-large" href="/work" data-link>My Projects</a>
 
       <div class="responsive-img-container">
-        <div class="responsive-img"></div>
+        <img src="../../static/images/markus-spiske-y6HpQzW87Vc-unsplash.jpg" width="3840" height="5760">
       </div>
 
       <h2>Featured Projects</h2>
