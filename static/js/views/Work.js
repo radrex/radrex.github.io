@@ -7,12 +7,11 @@ export default class extends BaseView {
   }
 
   async getHtml() {
+    let projects = Object.entries(await fetch('../../../static/data/projects.json').then(res => res.json()));
     return `
-      <h1>Projects</h1>
+      <h1>My Work</h1>
       <ul>
-        <li><a href="/project/1" data-link>Project 1</a></li>
-        <li><a href="/project/2" data-link>Project 2</a></li>
-        <li><a href="/project/3" data-link>Project 3</a></li>
+        ${projects.map(x => `<li><a href="/project/${x[0]}" data-link data-obj="${btoa(JSON.stringify(x[1]))}">${x[1].title}</a></li>`).reverse().join('')}
       </ul>
     `;
   }

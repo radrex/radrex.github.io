@@ -8,16 +8,14 @@ export default class extends BaseView {
   }
 
   async getHtml() {
-    let project = await fetch('../../../static/data/projects.json')
-                          .then(res => res.json())
-                          .then(data => { return data[this.projectId] });
+    let project = JSON.parse(atob(document.querySelector(`a[href="${location.pathname}"]`).getAttribute('data-obj')));
     return `
       <h1>${project.title}</h1>
       <section class="border-box">
         <h2>${project.definition}</h2>
         <p>${project.description}</p>
         ${project.link !== '' ? `<a target="_blank" rel="noopener noreferrer" class="btn btn-small" href="${project.link}">Visit</a>` : ''}
-        <a target="_blank" rel="noopener noreferrer" class="btn btn-small" href="${project.github}">Github</a>
+        ${project.github !== '' ? `<a target="_blank" rel="noopener noreferrer" class="btn btn-small" href="${project.github}">Github</a>` : ''}
       </section>
       
       <section class="project-showcase">
