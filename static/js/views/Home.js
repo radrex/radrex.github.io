@@ -7,7 +7,6 @@ export default class extends BaseView {
   }
 
   async getHtml() {
-
     return `
       <h1>Hey, I'm Radostin.</h1>
       <h2>A web developer based in Sofia, Bulgaria. Specialized in front-end and back-end.</h2>

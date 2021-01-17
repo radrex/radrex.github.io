@@ -5,6 +5,12 @@
     "description": "A repository containing different task solutions and projects in regards to my learning experience at Software University. The majority of tasks can be evaluated in judge assessment system at softuni.bg.",
     "link": "",
     "github": "https://github.com/radrex/SoftuniCourses",
+    "preview": {
+      "description": "A repository containing different task solutions and projects in regards to my learning experience at Software University. The majority of tasks can be evaluated in judge assessment system at softuni.bg.",
+      "imgUrl": "../../static/images/projects/su-mockup.png",
+      "imgWidth": 3318,
+      "imgHeight": 2154
+    },
     "techStack": ["ASP.NET", "Bootstrap"],
     "functionality": [
       {
@@ -21,17 +27,21 @@
         "imgWidth" : 1344,
         "imgHeight": 623
       }
-    ],
-
-    "previewImg": "previewImgLink"
+    ]
   },
   "2": {
-    "title": "Test Project 2",
-    "definition" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    "description": "Maecenas lacus velit, feugiat ut risus sed, blandit euismod dui. Curabitur laoreet quis nisl a finibus. Maecenas sed laoreet dui, in fringilla felis. In congue augue eget tortor feugiat, id fringilla neque dapibus. Curabitur nisi ligula, consequat et venenatis vitae, ornare et urna. Nam lobortis mi sed ullamcorper viverra. Curabitur turpis urna, rutrum et venenatis in, bibendum eget odio. Sed in diam egestas, cursus ex ut, vulputate diam. ",
+    "title": "Softuni Courses",
+    "definition" : "Personal source code for Software University",
+    "description": "A repository containing different task solutions and projects in regards to my learning experience at Software University. The majority of tasks can be evaluated in judge assessment system at softuni.bg.",
     "link": "",
-    "github": "",
-    "techStack": [],
+    "github": "https://github.com/radrex/SoftuniCourses",
+    "preview": {
+      "description": "A repository containing different task solutions and projects in regards to my learning experience at Software University. The majority of tasks can be evaluated in judge assessment system at softuni.bg.",
+      "imgUrl": "../../static/images/projects/su-mockup.png",
+      "imgWidth": 3318,
+      "imgHeight": 2154
+    },
+    "techStack": ["ASP.NET", "Bootstrap"],
     "functionality": [
       {
         "name": "Summarized course description and acquired skills",
@@ -47,8 +57,6 @@
         "imgWidth" : 1344,
         "imgHeight": 623
       }
-    ],
-
-    "previewImg": "previewImgLink"
+    ]
   }
 }

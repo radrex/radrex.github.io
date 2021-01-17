@@ -38,9 +38,38 @@
 }
 
 /*---------- WORK DYNAMIC PAGE ----------*/
+.work li {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
+.work h2, .work p, .work div {
+  width: 100%;
+}
 
+.work h1 {
+  text-align: center;
+}
 
+.work .responsive-img-container {
+  background-color: initial;
+  border: initial;
+}
+
+.work .responsive-img-container::after {
+  box-shadow: none;
+}
+
+.work h2 {
+  font-size: 1.7em;
+  letter-spacing: -0.031em;
+  margin-top: 1em;
+  box-shadow: inset 0px 15px 25px -19px rgba(0,0,0,0.78);
+  border-radius: 100px 1000px 0;
+  padding: 0 5px;
+}
 
 /*---------- PROJECT DYNAMIC PAGE ----------*/
 .project {
@@ -233,7 +262,7 @@ form {
 /*---------- BUTTONS ----------*/
 .btn {
   display: inline-block;
-  margin: 0.5em 1.0em 0.5em 0; /* 1.0em will be equal to the font-size of the element */
+  margin: 0.5em 0 0.5em 0; /* 1.0em will be equal to the font-size of the element */
   padding: 0.8em 1.5em; /* 1.0em will be equal to the font-size of the element */
 
   color: var(--color-light-orange);
