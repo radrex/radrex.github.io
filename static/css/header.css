@@ -78,7 +78,8 @@ header > nav {
   height: 0vh; /* shrinked/hidden */
   text-align: center;
   transition: all .5s;
-  background: var(--color-dark-blue);
+  box-shadow: inset 0px 0px 30px rgba(0,0,0,8);
+  background: url('../images/shattered-dark.png') repeat black;
 }
   .menu li {
     display: none; /* invisible  */
@@ -108,6 +109,7 @@ header > nav {
   }
 
   .menu {
+    box-shadow: none;
     position: relative;
     top: 0;
     height: 100px;

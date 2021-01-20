@@ -58,6 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (evt.target.matches('[data-link]')) { // if clicked link has data-link attribute, prevent its default <a> behavior and navigateTo(href)
       evt.preventDefault();
       navigateTo(evt.target.href);
+      window.scrollTo(0, 0); // Scroll to top after render
     }
   });
 
