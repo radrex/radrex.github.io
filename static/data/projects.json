@@ -49,16 +49,16 @@
         "imageUrl": "../../static/icons/express.svg"
       },
       {
-        "name": "Bootstrap",
-        "imageUrl": "../../static/icons/bootstrap.svg"
-      },
-      {
-        "name": "JSON",
-        "imageUrl": "../../static/icons/json.svg"
+        "name": "Mocha",
+        "imageUrl": "../../static/icons/mocha.svg"
       },
       {
         "name": "Chai",
         "imageUrl": "../../static/icons/chai.svg"
+      },
+      {
+        "name": "JSON",
+        "imageUrl": "../../static/icons/json.svg"
       },
       {
         "name": "HTML",
@@ -73,9 +73,14 @@
         "imageUrl": "../../static/icons/js.svg"
       },
       {
+        "name": "Bootstrap",
+        "imageUrl": "../../static/icons/bootstrap.svg"
+      },
+      {
         "name": "C",
         "imageUrl": "../../static/icons/c.svg"
       }
+
     ],
     "functionality": [
       {

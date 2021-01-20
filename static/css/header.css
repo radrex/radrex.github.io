@@ -1,14 +1,15 @@
 /*---------- HAMBURGER MENU --- MOBILE FIRST ---------*/
 header {
-  display: unset;
+  top: 0;
+  position: sticky;
+  z-index: 100; /* on top of everything */
 }
 
 header > nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  
-  position: sticky;
+
   width: 100vw; /* full screen */
   height: 80px; /* because icon is 64x64px */
   background:url('../images/shattered-dark.png') repeat, linear-gradient(to bottom, black 0%,#1a0c00 80%);
@@ -20,8 +21,10 @@ header > nav {
   align-items: center;
   width: auto;
 }
-  .logo-container > img {
-    margin-left: 15px; /* margin for logo img from the left side */
+  .logo-container > a {
+    margin-left: 20px; /* margin for logo img from the left side */
+    font-size: 1.4em;
+    color: var(--color-dark-orange);
   }
 
 #menu-toggler {
@@ -68,6 +71,7 @@ header > nav {
     }
 
 .menu {
+  z-index: 100; /* on top of everything */
   top: 80px;
   position: fixed;
   width: 100vw; /* full screen */

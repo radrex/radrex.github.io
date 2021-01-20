@@ -131,7 +131,6 @@
 
 .project-showcase h3::before {
   position: absolute;
-
   content: '\f121';
   font-family: "Font Awesome 5 Free";
   font-weight: 600;

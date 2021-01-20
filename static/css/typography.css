@@ -88,3 +88,7 @@ h5 {
 h6 {
   font-size: 1.2em; /* 17px */
 }
+
+a {
+  text-decoration: none;
+}
