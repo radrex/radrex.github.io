@@ -18,6 +18,15 @@ export default class extends BaseView {
         ${project.github !== '' ? `<a target="_blank" rel="noopener noreferrer" class="btn btn-small" href="${project.github}">Github</a>` : ''}
       </section>
       
+      <section class="tech-stack border-box">
+        <h3>Tech Stack</h3>
+        <ul>
+          ${project.techStack.map(x =>
+            `<li><img src="${x.imageUrl}"></li>`
+          ).join('')}
+        </ul>
+      </section>
+
       <section class="project-showcase">
         ${project.functionality.map(x => `
           <h3>${x.name}</h3>

@@ -94,6 +94,27 @@
   margin-bottom: 0.4em;
 }
 
+.tech-stack {
+  width: 100%;
+}
+
+.tech-stack ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.tech-stack li {
+  flex-basis: 33.333333%;
+  text-align: center;
+}
+
+.tech-stack img {
+  width: 50px;
+  height: auto;
+}
+
 .project-showcase {
   width: 100%;
 }
