@@ -11,9 +11,10 @@ header > nav {
   justify-content: space-between;
 
   width: 100vw; /* full screen */
-  height: 80px; /* because icon is 64x64px */
+  height: 60px; /* because icon is 64x64px */
   background:url('../images/shattered-dark.png') repeat, linear-gradient(to bottom, black 0%,#1a0c00 80%);
-  box-shadow: inset 0px -2px 9px 0px rgba(0,0,0,0.6);
+  box-shadow: inset 0px -2px 9px 0px rgba(0,0,0,0.6), 0px 0px 10px 4px rgba(0,0,0,0.5);
+  border-bottom: 1px solid black;
 }
 
 .logo-container {
@@ -23,8 +24,9 @@ header > nav {
 }
   .logo-container > a {
     margin-left: 20px; /* margin for logo img from the left side */
-    font-size: 1.4em;
+    font-size: 1.2em;
     color: var(--color-dark-orange);
+    text-shadow: 0px 0px 10px rgb(0, 0, 0), -2px -2px 3px rgb(0, 0, 0);
   }
 
 #menu-toggler {
@@ -45,34 +47,40 @@ header > nav {
   cursor: pointer;
 }
   .hamburger-slice { /* slice 2 */
-    width: 18px;
-    height: 2px;
+    width: 20px;
+    height: 4px;
     display: block;
     position: relative;
     background: var(--color-dark-orange);
+    box-shadow: 2px 0px 30px 15px rgba(0,0,0,0.5);
+    border: 1px solid black;
   }
     .hamburger-slice::before {  /* slice 1 */
       width: 100%;
       height: 100%;
       display: block;
       position: absolute;
-      top: 5px;
+      top: 7px;
+      left: -1px;
       content: "";
       background: var(--color-dark-orange);
+      border: 1px solid black;
     }
     .hamburger-slice::after { /* slice 3 */
       width: 100%;
       height: 100%;
       display: block;
       position: absolute;
-      top: -5px;
+      top: -9px;
       content: "";
       background: var(--color-dark-orange);
+      border: 1px solid black;
+      left: -1px;
     }
 
 .menu {
   z-index: 100; /* on top of everything */
-  top: 80px;
+  top: 60px;
   position: fixed;
   width: 100vw; /* full screen */
   height: 0vh; /* shrinked/hidden */
