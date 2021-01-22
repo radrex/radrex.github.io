@@ -8,7 +8,7 @@ export default class extends BaseView {
   }
 
   async getHtml() {
-    let project = JSON.parse(atob(document.querySelector(`a[href="${location.pathname}"]`).getAttribute('data-obj')));
+    let project = JSON.parse(atob(document.getElementById(this.projectId).getAttribute('data-obj')));
     return `
       <h1>${project.title}</h1>
       <section class="border-box">

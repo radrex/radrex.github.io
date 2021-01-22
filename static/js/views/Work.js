@@ -19,7 +19,7 @@ export default class extends BaseView {
             <div class="responsive-img-container" style="padding-bottom:${x[1].preview.imgHeight / (x[1].preview.imgWidth / 100)}%">
               <img src="${x[1].preview.imgUrl}" width="${x[1].preview.imgWidth}" height="${x[1].preview.imgHeight}">
             </div>
-            <a class="btn btn-medium" href="/project/${x[0]}" data-link data-obj="${btoa(JSON.stringify(x[1]))}">Check it out</a>
+            <a id="${x[0]}" class="btn btn-medium" href="/project/${x[0]}" data-link data-obj="${btoa(JSON.stringify(x[1]))}">Check it out</a>
           </li>
         `).reverse().join('')}
       </ul>
