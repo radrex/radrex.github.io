@@ -59,6 +59,12 @@ document.addEventListener('DOMContentLoaded', () => {
       evt.preventDefault();
       navigateTo(evt.target.href);
       window.scrollTo(0, 0); // Scroll to top after render
+
+      //------------ Select item in menu for current page ------------
+      let menu = document.getElementById('menu');
+      menu.querySelector('.active').classList.remove('active');
+      menu.querySelector(`a[href="${location.pathname.includes('project') ? '/work' : `${location.pathname}`}"]`).classList.add('active');
+      document.getElementById('menu-toggler').checked = false;
     }
   });
 
@@ -102,16 +108,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   router();
 });
-
-//------------------------- HAMBURGER MENU EVENT LISTENER -----------------------------------
-document.getElementById('menu').addEventListener('click', function(evt) {
-  if (evt.target && evt.target.nodeName === 'A') {
-    evt.currentTarget.getElementsByClassName('active')[0].classList.remove('active');
-    evt.target.classList.add('active');
-    document.getElementById('menu-toggler').checked = false;
-  }
-});
-
 
 //------------------------- NOTIFICATIONS -----------------------------------
 function displayError(message, id) {
