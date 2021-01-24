@@ -33,6 +33,11 @@ header > nav {
   display: none;
 }
 
+#menu-toggler:not(:checked) ~ .menu { /* Make links unclickable when menu is closed */
+  cursor: default;
+  pointer-events: none;
+}
+
 #menu-toggler:checked ~ .logo-container a { /* Make logo unclickable when menu is opened */
   cursor: default;
   pointer-events: none;
@@ -43,7 +48,9 @@ header > nav {
 }
 
 #menu-toggler:checked ~ .menu li {
-  display: block; /* visible when checked */
+  opacity: 1;
+  transition: all 2s;
+  /* display: block; visible when checked */
 }
 
 #menu-toggler:checked ~ .hamburger-btn .hamburger-slice {
@@ -120,7 +127,9 @@ header > nav {
   background: url('../images/shattered-dark.png') repeat black;
 }
   .menu li {
-    display: none; /* invisible  */
+    opacity: 0;
+    /* display: none; invisible  */
+
     margin: 50px 0;
     line-height: 30px;
     transition: all .5s;
