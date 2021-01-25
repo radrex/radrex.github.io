@@ -5,6 +5,5 @@ const { webkit } = require('playwright');
   const page = await browser.newPage();
   await page.goto('http://radrex.github.io');
   debugger;
-  await page.screenshot({ path: `example.png` });
   await browser.close();
 })();

@@ -45,7 +45,8 @@ html {
 body {
   color: var(--font-color);
   text-shadow: -2px -2px 3px rgba(0, 0, 0, 1);
-  font: var(--font-size-small)/1.5 'Rubik Regular', sans-serif; /* 14px */ /*Change font size variable in media queries to affect other elements*/
+  font: var(--font-size-small) 'Rubik Regular', sans-serif; /* 14px */ /*Change font size variable in media queries to affect other elements*/
+  line-height: 1.5;
 }
 
 input, textarea, button, select { /* By default, browsers render most form elements (textareas, text boxes, buttons, etc) using OS controls or browser controls. So most of the font properties are taken from the theme the OS is currently using. By setting them to inherit they will take the body properties. */
