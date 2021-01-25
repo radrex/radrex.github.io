@@ -53,6 +53,12 @@ input, textarea, button, select { /* By default, browsers render most form eleme
   font:inherit;
   color:inherit;
   text-shadow: inherit;
+
+  -webkit-appearance: none; /*Safari/Chrome*/
+  -moz-appearance: none; /*Firefox*/
+  -ms-appearance: none; /*IE*/
+  -o-appearance: none; /*Opera*/
+  appearance: none;
 }
 
 header {
