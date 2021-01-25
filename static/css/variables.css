@@ -4,22 +4,22 @@
   --font-size-medium: 16px;
   --font-size-large: 18px;
   --font-size-extra-large: 22px;
-  --font-color: #bcb6ae;
+  --font-color: #BCB6AE;
 
   /*--------- COLORS --------*/
-  --color-light-orange: #F8A300;
+  --color-red: #FF5A5A;
+  --color-black: #0F0E0E;
+  --color-green: #5ADC5A;
+  --color-yellow: #FFC85A;
+  --color-orange: #C86A1D;
   --color-dark-orange: #AD4E00;
+  --color-light-orange: #F8A300;
+  --color-darkest-orange: #6F3403;
+  --color-dark-orange-rgb: 173, 78, 0;
 
   --color-gray: #252525;
   --color-dark-gray: #1D1E19;
-
-
-  --color-light-blue: #93B1CE;
-  --color-blue: #19589F;
-
-  --color-dark-blue: #051627;
-
-  --color-light-green: #4DBC36;
-
-  --color-black: #0F0E0E;
+  --color-darker-gray: #1C1C1D;
+  --color-darker-gray-rgb: 28, 28, 29;
+  --color-darkest-gray-rgb: 39, 38, 38;
 }

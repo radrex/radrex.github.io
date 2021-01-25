@@ -1,0 +1,20 @@
+{
+  "1": {
+    "place": "University of National and World Economy",
+    "field": "Bachelor in Business Informatics",
+    "timespan": "September 2014 - October 2018",
+    "summary": ["Lorem ipsum dolor sit amet, consectetur adipiscing elit.", "Phasellus vitae ultricies dui. Pellentesque sed aliquam ante. Vestibulum viverra ligula posuere leo fringilla, iaculis sagittis eros fringilla.", "Phasellus placerat sed nibh congue aliquet."],
+    "skills": ["HTML5", "CSS3", "JavaScript", "jQuery", "Wordpress"],
+    "mainImgClass": "fas fa-university",
+    "timespanImgClass": "fas fa-graduation-cap fa-xs"
+  },
+  "2": {
+    "place": "Software University",
+    "field": "C# Web Developer",
+    "timespan": "January 2019 - Present",
+    "summary": ["Lorem ipsum dolor sit amet, consectetur adipiscing elit.", "Phasellus vitae ultricies dui. Pellentesque sed aliquam ante. Vestibulum viverra ligula posuere leo fringilla, iaculis sagittis eros fringilla.", "Phasellus placerat sed nibh congue aliquet."],
+    "skills": ["C#", "MSSQL", "EF Core", "ASP.NET Core", "JavaScript", "NodeJS", "HTML5", "CSS3", "C"],
+    "mainImgClass": "fas fa-university",
+    "timespanImgClass": "fas fa-graduation-cap fa-xs"
+  }
+}

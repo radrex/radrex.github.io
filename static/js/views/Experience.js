@@ -7,28 +7,31 @@ export default class extends BaseView {
   }
 
   async getHtml() {
-    //TODO: extract data in new json file
+    //TODO Load projects only once maybe in constructor
+    let data = Object.entries(await fetch('../../../static/data/experience.json').then(res => res.json()));
     return `
       <h1>Experience</h1>
-
       <section class="timeline">
-        <div class="timeline-block">
-          <div class="imgBlock"><i class="fas fa-university"></i></div>
+        ${data.map((x, idx) => `
+          <div class="timeline-block">
+            <div class="imgBlock"><i class="${x[1].mainImgClass}"></i></div>
+            <h2>${x[1].place}</h2>
+            <div class="timespan">
+              <span><i class="${x[1].timespanImgClass}"></i> ${x[1].field} </span>
+              <span><i class="far fa-calendar"></i> ${x[1].timespan}</span>
+            </div>
+            <details ${idx === data.length-1 ? 'open' : ''}>
+              <summary>Summary</summary>
+              <ul>
+                ${x[1].summary.map(y => `<li>${y}</li>`).join('')}
+              </ul>
+            </details>
 
-          <h2>University of National and World Economy</h2>
-          <div class="timespan">
-            <span><i class="fas fa-graduation-cap fa-xs"></i> Bachelor in Business Informatics </span>
-            <span><i class="far fa-calendar"></i> September 2014 - October 2018</span>
+            <ul class="skills">
+              ${x[1].skills.map(y => `<li>${y}</li>`).join('')}
+            </ul>
           </div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et metus scelerisque augue facilisis ornare in placerat nisl. Maecenas euismod ante ut mauris mattis venenatis. Nunc volutpat nisl mi. Sed mollis ut urna nec imperdiet. </p>
-          <ul class="skills">
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>JavaScript</li>
-            <li>jQuery</li>
-            <li>Wordpress</li>
-          </ul>
-        </div>
+        `).reverse().join('')}
       </section>
     `;
   }
