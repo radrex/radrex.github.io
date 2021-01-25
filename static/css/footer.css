@@ -28,7 +28,7 @@ footer {
     justify-content: space-evenly;
   }
 
-  .footer-social svg:hover g {
+  .footer-social svg:hover g, .footer-social svg:active g {
     fill: var(--color-black);
   }
 

@@ -257,7 +257,7 @@
       background-color: rgba(var(--color-dark-orange-rgb), 0.13);
       box-shadow: inset 0px 0px 15px 5px rgba(0,0,0,0.6), 0px 0px 10px 4px rgba(0,0,0,0.5);
     }
-      .skills li:hover {
+      .skills li:hover, .skills li:active  {
         transition: all 2s;
         background-color: rgba(var(--color-dark-orange-rgb), 0.5);
       }
@@ -300,9 +300,14 @@ summary {
 summary::-webkit-details-marker {
   display: none;
 }
-  summary:hover, details[open] > summary {
+  summary:hover, summary:active, details[open] > summary {
     color: var(--color-dark-orange);
   }
+  
+  details:not([open]) > summary {
+    color: inherit;
+  }
+
   summary::before {
     left: 5px;
     bottom: 7px;
@@ -414,7 +419,7 @@ form {
     background-color: var(--color-darker-gray);
     box-shadow: inset 0px 0px 15px 5px rgba(0,0,0,0.6);
   }
-    input[type="submit"]:hover {
+    input[type="submit"]:hover, input[type="submit"]:active  {
       font-size: 1.5em; /* subject to change */
       transition: all 1.0s;
       background-color: var(--color-darkest-orange);
@@ -469,7 +474,7 @@ form {
   text-decoration: none;
   transition-duration: 0.4s;
 }
-  .btn:hover {
+  .btn:hover, .btn:active {
     background-color: var(--color-black);
   }
 

@@ -139,7 +139,7 @@ header > nav {
       text-transform: uppercase;
       color: var(--color-light-orange);
     }
-      .menu li a.active,.menu li a:hover {
+      .menu li a.active,.menu li a:hover, .menu li a:active {
         transition: 0.5s;
         color: var(--color-dark-orange);
       }
@@ -171,7 +171,7 @@ header > nav {
       display: inline-block;
       transition: none;
     }
-      .menu li a.active, .menu li a:hover {
+      .menu li a.active, .menu li a:hover, .menu li a:active {
         transition: 0.5s;
         color: var(--color-dark-orange);
       }
