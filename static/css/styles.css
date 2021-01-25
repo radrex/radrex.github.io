@@ -176,7 +176,12 @@
   padding: 10px;
   border-radius: 8px;
   margin: 0 10px 15px 50px;
-  background: RGB(var(--color-darkest-gray-rgb), 0.1) url('../images/tasky.png') repeat;
+
+  background-color: rgb(var(--color-darkest-gray-rgb), 0.1);
+  background-image: url('../images/tasky.png');
+  background-repeat: repeat;
+
+  /* background: rgb(var(--color-darkest-gray-rgb), 0.1) url('../images/tasky.png') repeat; */
   box-shadow: inset 0px 0px 15px 5px rgba(0,0,0,0.6), 0px 0px 10px 4px rgba(0,0,0,0.5);
 }
   .timeline-block::before {
@@ -208,8 +213,10 @@
     font-size: 13px;
     padding: 5px 10px;
     margin-bottom: 0.5em;
-    background-color: rgba(173, 78, 0, 0.13);
-    background-color: RGBA(var(--color-darker-gray-rgb), 0.8);
+
+    background-color: rgba(173, 78, 0, 0.13); /* Pick one */
+    background-color: rgba(var(--color-darker-gray-rgb), 0.8);
+
     color: var(--font-color);
 
     border-radius: 5px;
@@ -248,12 +255,12 @@
 
       border-radius: 4px;
       border: 1px solid black;
-      background-color: RGBA(var(--color-dark-orange-rgb), 0.13);
+      background-color: rgba(var(--color-dark-orange-rgb), 0.13);
       box-shadow: inset 0px 0px 15px 5px rgba(0,0,0,0.6), 0px 0px 10px 4px rgba(0,0,0,0.5);
     }
       .skills li:hover {
         transition: all 2s;
-        background-color: RGBA(var(--color-dark-orange-rgb), 0.5);
+        background-color: rgba(var(--color-dark-orange-rgb), 0.5);
       }
 
 /*----------------------- REUSABLE ITEMS -----------------------*/
@@ -329,7 +336,13 @@ summary::-webkit-details-marker {
 
   border-radius: 10px;
   border: 2px solid black;
-  background: RGB(var(--color-darkest-gray-rgb), 0.1) url('../images/tasky.png') repeat;
+
+  background-color: rgb(var(--color-darkest-gray-rgb), 0.1);
+  background-image: url('../images/tasky.png');
+  background-repeat: repeat;
+
+  /* background: rgb(var(--color-darkest-gray-rgb), 0.1) url('../images/tasky.png') repeat; */
+
   box-shadow: inset 0px 0px 15px 5px rgba(0,0,0,0.6), 0px 0px 10px 4px rgba(0,0,0,0.5);
 }
   .window-body {

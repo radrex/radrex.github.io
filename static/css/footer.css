@@ -6,7 +6,7 @@ footer {
   justify-content: space-between;
 
   height: 250px; /*subject to change*/
-  background:url('../images/shattered-dark.png') repeat, linear-gradient(to top, black 0%,#1a0c00 90%) ;
+  background: url('../images/shattered-dark.png') repeat, linear-gradient(to top, black 0%,#1a0c00 90%) ;
   box-shadow: inset 0px 3px 9px 0px rgba(0,0,0,0.6);
   border-top: 1px solid black;
 }

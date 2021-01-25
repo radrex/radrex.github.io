@@ -12,7 +12,7 @@ header > nav {
 
   width: 100vw; /* full screen */
   height: 60px; /* because icon is 64x64px */
-  background:url('../images/shattered-dark.png') repeat, linear-gradient(to bottom, black 0%,#1a0c00 80%);
+  background: url('../images/shattered-dark.png') repeat, linear-gradient(to bottom, black 0%,#1a0c00 80%);
   box-shadow: inset 0px -2px 9px 0px rgba(0,0,0,0.6), 0px 0px 10px 4px rgba(0,0,0,0.5);
   border-bottom: 1px solid black;
 }
