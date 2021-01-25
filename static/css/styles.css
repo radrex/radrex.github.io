@@ -281,12 +281,18 @@ details { /* TODO: Find a way to add animation when opening/closig details*/
 summary {
   list-style: none;
   user-select: none;
+  -webkit-user-select: none;      
+  -moz-user-select: none;
+  -ms-user-select: none;
   cursor: pointer;
   outline:none;
   padding: 5px 5px 5px 25px;
   margin-bottom:0px;
   font-weight:600;
   position: relative;
+}
+summary::-webkit-details-marker {
+  display: none;
 }
   summary:hover, details[open] > summary {
     color: var(--color-dark-orange);

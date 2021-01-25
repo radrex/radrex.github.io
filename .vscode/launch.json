@@ -7,11 +7,20 @@
     {
       "type": "node",
       "request": "launch",
-      "name": "Launch Program",
+      "name": "Express",
       "skipFiles": [
         "<node_internals>/**"
       ],
       "program": "${workspaceFolder}\\server.js"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Playwright",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "program": "${workspaceFolder}\\playwright.js"
     }
   ]
 }

@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/radrex/radrex.github.io#readme",
   "devDependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "playwright": "^1.8.0"
   }
 }
