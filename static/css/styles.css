@@ -425,7 +425,7 @@ form {
   }
     input[type="submit"]:active {
       transform: scale(0.85);
-      transition: all -15s ease-in-out;
+      transition: all -6s ease-in-out;
     }
 
 /*---------- IMAGES ----------*/
