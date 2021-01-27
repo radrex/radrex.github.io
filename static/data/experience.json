@@ -1,19 +1,28 @@
 {
   "1": {
-    "place": "University of National and World Economy",
-    "field": "Bachelor in Business Informatics",
-    "timespan": "September 2014 - October 2018",
-    "summary": ["Lorem ipsum dolor sit amet, consectetur adipiscing elit.", "Phasellus vitae ultricies dui. Pellentesque sed aliquam ante. Vestibulum viverra ligula posuere leo fringilla, iaculis sagittis eros fringilla.", "Phasellus placerat sed nibh congue aliquet."],
-    "skills": ["HTML5", "CSS3", "JavaScript", "jQuery", "Wordpress"],
+    "place": "Foreign Language High School Acad. Lyudmil Stoyanov",
+    "field": "High school diploma",
+    "timespan": "September 2009 - June 2014",
+    "summary": ["Profiled high school with intensive study of language subjects."],
+    "skills": ["English", "French"],
     "mainImgClass": "fas fa-university",
     "timespanImgClass": "fas fa-graduation-cap fa-xs"
   },
   "2": {
+    "place": "University of National and World Economy",
+    "field": "Bachelor in Business Informatics and Communications",
+    "timespan": "September 2014 - October 2018",
+    "summary": ["Studied general economic subjects and statistics, computing system architectures, internet technologies, computer networks and telecommunications, operating systems, database programming.", "Studied technologies and models for building web and mobile systems and applications. Enterprise resource management systems, business intelligent systems.", "Developed, designed UI and managed integrated information systems based on client-server technologies."],
+    "skills": ["MS Excel", "MS Access", "HTML5", "CSS3", "Java", "C#", "MSSQL", "MySQL", "JDBC", "WinForms", "WPF", "ADO.NET", "Tableau"],
+    "mainImgClass": "fas fa-university",
+    "timespanImgClass": "fas fa-graduation-cap fa-xs"
+  },
+  "3": {
     "place": "Software University",
-    "field": "C# Web Developer",
+    "field": "C# Web Developer Diploma",
     "timespan": "January 2019 - Present",
-    "summary": ["Lorem ipsum dolor sit amet, consectetur adipiscing elit.", "Phasellus vitae ultricies dui. Pellentesque sed aliquam ante. Vestibulum viverra ligula posuere leo fringilla, iaculis sagittis eros fringilla.", "Phasellus placerat sed nibh congue aliquet."],
-    "skills": ["C#", "MSSQL", "EF Core", "ASP.NET Core", "JavaScript", "NodeJS", "HTML5", "CSS3", "C"],
+    "summary": ["Worked with .NET platform using C#, linear data structures, associative arrays, streams, files and directories, classes and objects, functional programming with LINQ. Learned the main OOP principles using object-oriented modeling and building class hierarchies adhering to the five SOLID principles. Looked through the most commonly used design patterns. Did component testing and TDD, used Reflection and events.", "Developed information systems with MSSQL using the relational model and ER diagrams. Used SQL for Data Manipulation — Extraction, Selection, Projection, Connections, Aggregation, Grouping, Modification, Deletion and Insertion. Worked with ACID transactions and transactional processing.  Used EF Core's ORM technology to map between relational DB's and object-oriented model (DB First / Code First), executing DB queries and CRUD operations.", "Used ASP.NET Core to build web apps with MVC architecture using HTML5, MSSQL and EF Core. Defined models, views, partial views with Razor View Engine and Controllers. Worked with the HTTP protocol, Users, Roles and Sessions, Cookies, using AJAX, caching, web application security, web sockets and MVC Controls.", "Used JS to build SPA applications. Worked with functions, arrays and matrices, objects and classes. Learned about complex concepts such as Function Context, Explicit Binding, Event Loop, Inheritance, Object Composition and Prototype Chaining. Manipulated the DOM tree, handled different events. Worked with the HTTP protocol, REST and Baas Services. Used Promises, async/await to write Asynchronous code. Built apps using Routing and Templating, using Custom Web Components and raising a Webpack environment from scratch."],
+    "skills": ["HTML5", "CSS3", "Bootstrap", "C#", "MSSQL", "EF Core", "ASP.NET Core", "JavaScript", "Handlebars", "Firebase", "Webpack", "NodeJS", "Express", "C"],
     "mainImgClass": "fas fa-university",
     "timespanImgClass": "fas fa-graduation-cap fa-xs"
   }

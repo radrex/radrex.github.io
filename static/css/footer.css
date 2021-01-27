@@ -28,8 +28,15 @@ footer {
     justify-content: space-evenly;
   }
 
-  .footer-social svg:hover g, .footer-social svg:active g {
-    fill: var(--color-black);
+  .footer-social i {
+    font-size: 2em;
+    color: var(--color-dark-orange);
+  }
+
+  .footer-social i:hover {
+    color: var(--color-darkest-orange);
+    transition: all 1s;
+    transform: translate(0px, -5px);
   }
 
   .footer-rights {
