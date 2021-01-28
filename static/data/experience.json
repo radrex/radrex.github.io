@@ -22,6 +22,60 @@
     "field": "C# Web Developer Diploma",
     "timespan": "January 2019 - Present",
     "summary": ["Worked with .NET platform using C#, linear data structures, associative arrays, streams, files and directories, classes and objects, functional programming with LINQ. Learned the main OOP principles using object-oriented modeling and building class hierarchies adhering to the five SOLID principles. Looked through the most commonly used design patterns. Did component testing and TDD, used Reflection and events.", "Developed information systems with MSSQL using the relational model and ER diagrams. Used SQL for Data Manipulation — Extraction, Selection, Projection, Connections, Aggregation, Grouping, Modification, Deletion and Insertion. Worked with ACID transactions and transactional processing.  Used EF Core's ORM technology to map between relational DB's and object-oriented model (DB First / Code First), executing DB queries and CRUD operations.", "Used ASP.NET Core to build web apps with MVC architecture using HTML5, MSSQL and EF Core. Defined models, views, partial views with Razor View Engine and Controllers. Worked with the HTTP protocol, Users, Roles and Sessions, Cookies, using AJAX, caching, web application security, web sockets and MVC Controls.", "Used JS to build SPA applications. Worked with functions, arrays and matrices, objects and classes. Learned about complex concepts such as Function Context, Explicit Binding, Event Loop, Inheritance, Object Composition and Prototype Chaining. Manipulated the DOM tree, handled different events. Worked with the HTTP protocol, REST and Baas Services. Used Promises, async/await to write Asynchronous code. Built apps using Routing and Templating, using Custom Web Components and raising a Webpack environment from scratch."],
+    "docs": [
+      {
+        "name": "Programming Basics C#",
+        "url": "https://github.com/radrex/SoftuniCourses/blob/master/certificates/Programming%20Basics%20C%23.pdf"
+      },
+      {
+        "name": "C Essentials",
+        "url": "https://github.com/radrex/SoftuniCourses/blob/master/certificates/C%20Essentials.pdf"
+      },
+      {
+        "name": "HTML & CSS",
+        "url": "https://github.com/radrex/SoftuniCourses/blob/master/certificates/HTML%20%26%20CSS.pdf"
+      },
+      {
+        "name": "C# Fundamentals",
+        "url": "https://github.com/radrex/SoftuniCourses/blob/master/certificates/C%23%20Fundamentals.pdf"
+      },
+      {
+        "name": "C# Advanced",
+        "url": "https://github.com/radrex/SoftuniCourses/blob/master/certificates/C%23%20Advanced.pdf"
+      },
+      {
+        "name": "C# OOP",
+        "url": "https://github.com/radrex/SoftuniCourses/blob/master/certificates/C%23%20OOP.pdf"
+      },
+      {
+        "name": "Database Basics - MSSQL",
+        "url": "https://github.com/radrex/SoftuniCourses/blob/master/certificates/Database%20Basics%20MS%20SQL.pdf"
+      },
+      {
+        "name": "Entity Framework Core",
+        "url": "https://github.com/radrex/SoftuniCourses/blob/master/certificates/Entity%20Framework%20Core.pdf"
+      },
+      {
+        "name": "C# Web Basics",
+        "url": "https://github.com/radrex/SoftuniCourses/blob/master/certificates/C%23%20Web%20Basics.pdf"
+      },
+      {
+        "name": "ASP.NET Core",
+        "url": "https://github.com/radrex/SoftuniCourses/blob/master/certificates/ASP.NET%20Core.pdf"
+      },
+      {
+        "name": "JS Advanced",
+        "url": "https://github.com/radrex/SoftuniCourses/blob/master/certificates/JS%20Advanced.pdf"
+      },
+      {
+        "name": "JS Applications",
+        "url": "https://github.com/radrex/SoftuniCourses/blob/master/certificates/JS%20Applications.pdf"
+      },
+      {
+        "name": "C# Web Developer Diploma",
+        "url": "https://github.com/radrex/SoftuniCourses/blob/master/certificates/Diploma%20for%20C%23%20Web%20Developer.pdf"
+      }
+    ],
     "skills": ["HTML5", "CSS3", "Bootstrap", "C#", "MSSQL", "EF Core", "ASP.NET Core", "JavaScript", "Handlebars", "Firebase", "Webpack", "NodeJS", "Express", "C"],
     "mainImgClass": "fas fa-university",
     "timespanImgClass": "fas fa-graduation-cap fa-xs"

@@ -14,8 +14,8 @@ export default class extends BaseView {
       <section class="border-box">
         <h2>${project.definition}</h2>
         <p>${project.description}</p>
-        ${project.link !== '' ? `<a target="_blank" rel="noopener noreferrer" class="btn btn-small" href="${project.link}">Visit</a>` : ''}
-        ${project.github !== '' ? `<a target="_blank" rel="noopener noreferrer" class="btn btn-small" href="${project.github}">Github</a>` : ''}
+        ${project.hasOwnProperty('link') ? `<a target="_blank" rel="noopener noreferrer" class="btn btn-small" href="${project.link}">Visit</a>` : ''}
+        ${project.hasOwnProperty('github') ? `<a target="_blank" rel="noopener noreferrer" class="btn btn-small" href="${project.github}">Github</a>` : ''}
       </section>
       
       <section class="tech-stack border-box">
