@@ -345,6 +345,7 @@ summary {
   -moz-user-select: none;
   -ms-user-select: none;
   cursor: pointer;
+  outline: 0;
   padding: 5px 5px 5px 25px;
   margin-bottom:0px;
   font-weight: 600; /* Be careful with font-weight for Font Awesome it affects it 100-500(regular), 600-900(solid) */
