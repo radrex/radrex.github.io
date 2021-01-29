@@ -14,8 +14,6 @@ footer {
   flex-direction: row;
   justify-content: space-between;
 
-  height: 250px; /*subject to change*/
-
   background: url('../images/shattered-dark.png') repeat, -webkit-gradient(linear, left bottom, left top, from(black),color-stop(90%, #1a0c00));
   background: url('../images/shattered-dark.png') repeat, -o-linear-gradient(bottom, black 0%,#1a0c00 90%);
   background: url('../images/shattered-dark.png') repeat, linear-gradient(to top, black 0%,#1a0c00 90%);
@@ -48,9 +46,11 @@ footer {
   }
 
   .footer-social {
+    -ms-flex-wrap: wrap;
     -webkit-box-pack: space-evenly;
     -ms-flex-pack: space-evenly;
-
+    
+    flex-wrap: wrap;
     justify-content: space-evenly;
   }
 
