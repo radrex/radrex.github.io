@@ -4,7 +4,7 @@ export default class extends BaseView {
   constructor(params) {
     super(params);
     this.projectId = params.id;
-    this.setTitle(`Project ${this.projectId}`);
+    this.setTitle(`${this.projectId.split('-').join(' ')} | Radostin Stoychev`);
   }
 
   async getHtml() {

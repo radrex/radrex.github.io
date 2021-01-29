@@ -3,7 +3,7 @@ import BaseView from "./BaseView.js";
 export default class extends BaseView {
   constructor(params) {
     super(params);
-    this.setTitle('Contact');
+    this.setTitle('Contact | Radostin Stoychev');
   }
 
   async getHtml() {
@@ -14,7 +14,7 @@ export default class extends BaseView {
       <section class="border-box">
         <h3>Status</h3>
         <h4>Available</h4>
-        <p>I'm currently looking for a job and taking on side projects.</p>
+        <p>I'm currently on a job hunt and taking on side projects.</p>
       </section>
 
       <section class="mac-window">

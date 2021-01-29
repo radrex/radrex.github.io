@@ -106,6 +106,6 @@ h6 {
 }
 
 a {
+  color: #8C8882;
   text-decoration: none;
-  color: var(--font-color);
-}
+} 
