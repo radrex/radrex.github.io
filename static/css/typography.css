@@ -35,6 +35,7 @@
 
 /*---------------------------- MOBILE FIRST ----------------------------*/
 * {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -71,6 +72,7 @@ main, footer {
 }
 
 main {
+  -webkit-box-shadow: inset 0px 0px 30px rgba(0,0,0,8);
   box-shadow: inset 0px 0px 30px rgba(0,0,0,8);
   background: url('../images/shattered-dark.png') repeat black;
 }

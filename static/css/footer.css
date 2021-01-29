@@ -1,12 +1,26 @@
 /*---------- MOBILE ----------*/
 footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -ms-flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
 
   height: 250px; /*subject to change*/
-  background: url('../images/shattered-dark.png') repeat, linear-gradient(to top, black 0%,#1a0c00 90%) ;
+
+  background: url('../images/shattered-dark.png') repeat, -webkit-gradient(linear, left bottom, left top, from(black),color-stop(90%, #1a0c00));
+  background: url('../images/shattered-dark.png') repeat, -o-linear-gradient(bottom, black 0%,#1a0c00 90%);
+  background: url('../images/shattered-dark.png') repeat, linear-gradient(to top, black 0%,#1a0c00 90%);
+
+  -webkit-box-shadow: inset 0px 3px 9px 0px rgba(0,0,0,0.6);
   box-shadow: inset 0px 3px 9px 0px rgba(0,0,0,0.6);
   border-top: 1px solid black;
 }
@@ -16,15 +30,27 @@ footer {
 
   .footer-contacts, .footer-social {
     width: 50%;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+
     display: flex;
     align-items: center;
   }
 
   .footer-contacts {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+
     justify-content: flex-start;
   }
 
   .footer-social {
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+
     justify-content: space-evenly;
   }
 
@@ -35,7 +61,11 @@ footer {
 
   .footer-social i:hover {
     color: var(--color-darkest-orange);
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
     transition: all 1s;
+    -webkit-transform: translate(0px, -5px);
+    -ms-transform: translate(0px, -5px);
     transform: translate(0px, -5px);
   }
 

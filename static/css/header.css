@@ -2,23 +2,42 @@
 header {
   top: 0;
   z-index: 100;
+  position: -webkit-sticky;
   position: sticky;
 }
 
 header > nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
 
   width: 100vw; /* full screen */
   height: 60px; /* because icon is 64x64px */
+
+  background: url('../images/shattered-dark.png') repeat, -webkit-gradient(linear, left top, left bottom, from(black),color-stop(80%, #1a0c00));
+  background: url('../images/shattered-dark.png') repeat, -o-linear-gradient(top, black 0%,#1a0c00 80%);
   background: url('../images/shattered-dark.png') repeat, linear-gradient(to bottom, black 0%,#1a0c00 80%);
+
+  -webkit-box-shadow: inset 0px -2px 9px 0px rgba(0,0,0,0.6), 0px 0px 10px 4px rgba(0,0,0,0.5);
   box-shadow: inset 0px -2px 9px 0px rgba(0,0,0,0.6), 0px 0px 10px 4px rgba(0,0,0,0.5);
   border-bottom: 1px solid black;
 }
 
 .logo-container {
   width: auto;
+
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+
   display: flex;
   align-items: center;
 }
@@ -49,6 +68,8 @@ header > nav {
 
 #menu-toggler:checked ~ .menu li {
   opacity: 1;
+  -webkit-transition: all 2s;
+  -o-transition: all 2s;
   transition: all 2s;
   /* display: block; visible when checked */
 }
@@ -59,22 +80,33 @@ header > nav {
 
 #menu-toggler:checked ~ .hamburger-btn .hamburger-slice::before {
   top: 0;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
   transition: all 1s;
   visibility: visible;
+  -webkit-transform:rotate(135deg);
+  -ms-transform:rotate(135deg);
   transform:rotate(135deg);
   border: 2px solid black;
+  -webkit-box-shadow: 2px 0px 30px 15px rgba(0,0,0,0.5);
   box-shadow: 2px 0px 30px 15px rgba(0,0,0,0.5);
 }
 
 #menu-toggler:checked ~ .hamburger-btn .hamburger-slice::after {
   top: 0;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
   transition: all 1s;
   visibility: visible;
+  -webkit-transform:rotate(225deg);
+  -ms-transform:rotate(225deg);
   transform:rotate(225deg);
   border: 2px solid black;
 }
 
 #menu-toggler:not(:checked) ~ .hamburger-btn .hamburger-slice::before, #menu-toggler:not(:checked) ~ .hamburger-btn .hamburger-slice::after {
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
   transition: all 1s;
 }
 
@@ -90,6 +122,7 @@ header > nav {
     position: relative;
     background: var(--color-dark-orange);
     border: 2px solid black;
+    -webkit-box-shadow: 2px 0px 30px 15px rgba(0,0,0,0.5);
     box-shadow: 2px 0px 30px 15px rgba(0,0,0,0.5);
   }
     .hamburger-slice::before {  /* slice 1 */
@@ -122,7 +155,10 @@ header > nav {
   z-index: 100;
   position: fixed;
   text-align: center;
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
   transition: all .5s;
+  -webkit-box-shadow: inset 0px 0px 30px rgba(0,0,0,8);
   box-shadow: inset 0px 0px 30px rgba(0,0,0,8);
   background: url('../images/shattered-dark.png') repeat black;
 }
@@ -132,6 +168,8 @@ header > nav {
 
     margin: 50px 0;
     line-height: 30px;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
     transition: all .5s;
   }
     .menu li a {
@@ -140,6 +178,8 @@ header > nav {
       color: var(--color-light-orange);
     }
       .menu li a.active,.menu li a:hover, .menu li a:active {
+        -webkit-transition: 0.5s;
+        -o-transition: 0.5s;
         transition: 0.5s;
         color: var(--color-dark-orange);
       }
@@ -155,12 +195,15 @@ header > nav {
   }
 
   .menu {
+    -webkit-box-shadow: none;
     box-shadow: none;
     position: relative;
     top: 0;
     height: 100px;
     margin-right: 25px;
     float: right;
+    -webkit-transition: none;
+    -o-transition: none;
     transition: none;
     background: none;
     text-align: right;
@@ -169,9 +212,13 @@ header > nav {
       margin: 0 20px;
       line-height: 100px;
       display: inline-block;
+      -webkit-transition: none;
+      -o-transition: none;
       transition: none;
     }
       .menu li a.active, .menu li a:hover, .menu li a:active {
+        -webkit-transition: 0.5s;
+        -o-transition: 0.5s;
         transition: 0.5s;
         color: var(--color-dark-orange);
       }
