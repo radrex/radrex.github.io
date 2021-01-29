@@ -478,7 +478,8 @@ summary {
 summary::-webkit-details-marker {
   display: none;
 }
-  summary:hover, summary:active, details[open] > summary {
+  details[open] > summary {
+    transition: all .5s;
     color: var(--color-dark-orange);
   }
   

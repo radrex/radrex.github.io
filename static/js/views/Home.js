@@ -3,7 +3,7 @@ import BaseView from "./BaseView.js";
 export default class extends BaseView {
   constructor(params) {
     super(params);
-    this.setTitle('About | Radostin Stoychev');
+    this.setTitle('About Me | Radostin Stoychev');
   }
 
   async getHtml() {
