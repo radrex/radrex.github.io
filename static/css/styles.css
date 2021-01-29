@@ -221,7 +221,7 @@
 }
 
 .project-showcase h3::before {
-  top: -10px;
+  top: -12px;
   position: absolute;
   content: '';
   border: 0;
@@ -239,7 +239,7 @@
   width: 100px; /* Need a specific value to work */
   margin-left: auto; 
   margin-right: auto; 
-  top: -24px;
+  top: -27px;
   content: '\f121';
   font-weight: 900;
   text-align: center;
