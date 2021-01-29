@@ -19,7 +19,7 @@ header > nav {
   justify-content: space-between;
 
   width: 100vw; /* full screen */
-  height: 60px; /* because icon is 64x64px */
+  height: 60px;
 
   background: url('../images/shattered-dark.png') repeat, -webkit-gradient(linear, left top, left bottom, from(black),color-stop(80%, #1a0c00));
   background: url('../images/shattered-dark.png') repeat, -o-linear-gradient(top, black 0%,#1a0c00 80%);
@@ -63,7 +63,7 @@ header > nav {
 }
 
 #menu-toggler:checked ~ .menu {
-  height: 100vh; /* expanded */
+  height: calc(100vh - 60px); /* expanded */
 }
 
 #menu-toggler:checked ~ .menu li {
@@ -71,7 +71,6 @@ header > nav {
   -webkit-transition: all 2s;
   -o-transition: all 2s;
   transition: all 2s;
-  /* display: block; visible when checked */
 }
 
 #menu-toggler:checked ~ .hamburger-btn .hamburger-slice {
@@ -149,6 +148,18 @@ header > nav {
     }
 
 .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
   top: 60px;
   width: 100vw; /* full screen */
   height: 0vh; /* shrinked/hidden */
@@ -164,10 +175,6 @@ header > nav {
 }
   .menu li {
     opacity: 0;
-    /* display: none; invisible  */
-
-    margin: 50px 0;
-    line-height: 30px;
     -webkit-transition: all .5s;
     -o-transition: all .5s;
     transition: all .5s;
@@ -183,38 +190,6 @@ header > nav {
         transition: 0.5s;
         color: var(--color-dark-orange);
       }
-
-/*---------- LANDSCAPE PHONES ----------*/
-@media (max-height: 415px) {
-  .menu li {
-    margin: 45px 0;
-  }
-}
-@media (max-height: 395px) {
-  .menu li {
-    margin: 40px 0;
-  }
-}
-@media  (max-height: 375px) {
-  .menu li {
-    margin: 35px 0;
-  }
-}
-@media (max-height: 345px) {
-  .menu li {
-    margin: 30px 0;
-  }
-}
-@media (max-height: 320px) {
-  .menu li {
-    margin: 25px 0;
-  }
-}
-@media (max-height: 300px) {
-  .menu li {
-    margin: 13px 0;
-  }
-}
 
 /*---------- DESKTOP ---------*/
 @media only screen and (min-width: 900px) {
