@@ -184,6 +184,38 @@ header > nav {
         color: var(--color-dark-orange);
       }
 
+/*---------- LANDSCAPE PHONES ----------*/
+@media (max-height: 415px) {
+  .menu li {
+    margin: 45px 0;
+  }
+}
+@media (max-height: 395px) {
+  .menu li {
+    margin: 40px 0;
+  }
+}
+@media  (max-height: 375px) {
+  .menu li {
+    margin: 35px 0;
+  }
+}
+@media (max-height: 345px) {
+  .menu li {
+    margin: 30px 0;
+  }
+}
+@media (max-height: 320px) {
+  .menu li {
+    margin: 25px 0;
+  }
+}
+@media (max-height: 300px) {
+  .menu li {
+    margin: 13px 0;
+  }
+}
+
 /*---------- DESKTOP ---------*/
 @media only screen and (min-width: 900px) {
   nav {
