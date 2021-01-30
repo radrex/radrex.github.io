@@ -330,7 +330,7 @@
     text-align: center;
     background-color: #1c1c1d;
     top: 7px;
-    left: -39px;
+    left: -40px;
     width: 22px;
     height: 22px;
     border-radius: 50%;
@@ -779,9 +779,6 @@ form {
     flex-basis: 20%;
   }
 
-  .experience h2 {
-    font-size: 1.1em;
-  }
   .experience .timespan, .experience details, .experience .skills {
     font-size: 0.9em;
   }
