@@ -597,6 +597,10 @@ form {
 }
 
   input[type="text"], textarea {
+    font-size: 16px; /* Remove zoom on focus for safari */
+  }
+
+  input[type="text"], textarea {
     width:100%;
     padding: 13px;
     margin-bottom: 15px;
@@ -780,6 +784,18 @@ form {
   }
   .experience .timespan, .experience details, .experience .skills {
     font-size: 0.9em;
+  }
+
+  .contact .border-box {
+    width: 70%;
+    margin: 10px auto 20px;
+  }
+  .contact .mac-window {
+    width: 70%;
+    margin: 10px auto 20px;
+  }
+  .contact input[type="text"], textarea {
+    padding: 8px;
   }
 }
 
