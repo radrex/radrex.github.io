@@ -35,6 +35,7 @@
 
 /*---------------------------- MOBILE FIRST ----------------------------*/
 * {
+  -webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape while allowing user zoom */
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }

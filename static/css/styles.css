@@ -752,7 +752,7 @@ form {
 
 /*------------------------------- MEDIA QUERIES -------------------------------*/
 /*---------- LANDSCAPE PHONES ----------*/
-@media (min-width: 415px) {
+@media (orientation:landscape) and (min-width: 415px) {
   .home {
     font-size: 0.9em;
   }
