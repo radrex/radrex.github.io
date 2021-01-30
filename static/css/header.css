@@ -179,6 +179,9 @@ header > nav {
     -o-transition: all .5s;
     transition: all .5s;
   }
+  .menu li:last-child {
+    padding-bottom: 12%;
+  }
     .menu li a {
       text-decoration: none;
       text-transform: uppercase;
@@ -192,13 +195,6 @@ header > nav {
       }
 
 /*------------------------------- MEDIA QUERIES -------------------------------*/
-/*---------- LANDSCAPE PHONES ----------*/
-@media (orientation:landscape) and (min-width: 415px) {
-  .menu li:last-child {
-    padding-bottom: 12%;
-  }
-}
-
 /*---------- DESKTOP ---------*/
 @media only screen and (min-width: 900px) {
   nav {
