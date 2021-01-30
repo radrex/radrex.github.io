@@ -117,25 +117,25 @@ function displayError(message, id) {
   let errorBox = document.getElementById(id);
   let oldPlaceholder = errorBox.placeholder;
 
-  errorBox.style.fontSize = '70%';
+  errorBox.style.fontSize = '0.62em';
   errorBox.value = '';
   errorBox.placeholder = message;
 
   setTimeout(() => {
-    errorBox.style.fontSize = '100%';
+    errorBox.style.fontSize = '1em'; // keep it 1 em for safari
     errorBox.placeholder = oldPlaceholder;
   }, 2000);
 }
 
 function displayInfo(message, id) {
-  //TODO - font-size and transitions for higher resolutions (media-queries)
+  //TODO - font-size and transit  ions for higher resolutions (media-queries)
   let infoBox = document.getElementById(id);
   let oldValue = infoBox.value;
-  infoBox.style.fontSize = '70%';
+  infoBox.style.fontSize = '0.5em';
 
   infoBox.value = message;
   setTimeout(() => {
-    infoBox.style.fontSize = '100%';
+    infoBox.style.fontSize = '1.1em';
     infoBox.value = oldValue;
   }, 5000);
 }
