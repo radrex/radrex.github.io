@@ -623,27 +623,27 @@ form {
     line-height: 150%;
   }
     input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
-      font-size: 1.3em; /* subject to change */
+      font-size: 1.1em;
       font-weight: 500;
       color: var(--font-color);
     }
     input::-moz-placeholder, textarea::-moz-placeholder {
-      font-size: 1.3em; /* subject to change */
+      font-size: 1.1em;
       font-weight: 500;
       color: var(--font-color);
     }
     input:-ms-input-placeholder, textarea:-ms-input-placeholder {
-      font-size: 1.3em; /* subject to change */
+      font-size: 1.1em;
       font-weight: 500;
       color: var(--font-color);
     }
     input::-ms-input-placeholder, textarea::-ms-input-placeholder {
-      font-size: 1.3em; /* subject to change */
+      font-size: 1.1em;
       font-weight: 500;
       color: var(--font-color);
     }
     input::placeholder, textarea::placeholder {
-      font-size: 1.3em; /* subject to change */
+      font-size: 1.1em;
       font-weight: 500;
       color: var(--font-color);
     }
@@ -656,6 +656,7 @@ form {
     }
 
   input[type="submit"] {
+    font-size: 1.1em;
     width: 100%;
     padding: 10px 0;
     letter-spacing: 1px;
