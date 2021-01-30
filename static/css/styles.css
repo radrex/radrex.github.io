@@ -13,9 +13,23 @@
 }
 
 .favored-tech {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -ms-flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.tech-block {
   border: 2px solid black;
   padding: 10px;
   border-radius: 8px;
+  width: 100%;
   margin: 10px 10px 20px 10px;
   background-color: rgba(var(--color-darkest-gray-rgb), 0.1);
   background-image: url('../images/tasky.png');
@@ -736,7 +750,40 @@ form {
   font-size: var(--font-size-extra-large);
 }
 
-/*---------- MEDIA QUERIES ----------*/
+/*------------------------------- MEDIA QUERIES -------------------------------*/
+/*---------- LANDSCAPE PHONES ----------*/
+@media (min-width: 415px) {
+  .home {
+    font-size: 0.9em;
+  }
+  .home .favored-tech {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  .home .tech-block {
+    margin: 10px 0 20px 0;
+    width: 48%;
+  }
+  .home .img-container-wrapper {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .project .tech-stack li {
+    -ms-flex-preferred-size: 20%;
+    flex-basis: 20%;
+  }
+
+  .experience h2 {
+    font-size: 1.1em;
+  }
+  .experience .timespan, .experience details, .experience .skills {
+    font-size: 0.9em;
+  }
+}
+
+
 /* @media(min-width: 500px) {
   html { font-size: var(--font-size-small, 14px) };
 }

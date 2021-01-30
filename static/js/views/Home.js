@@ -14,11 +14,14 @@ export default class extends BaseView {
       
       <a class="btn btn-large" href="/work" data-link>My Projects</a>
 
-      <div class="responsive-img-container">
-        <img src="../../static/images/markus-spiske-y6HpQzW87Vc-unsplash.jpg" width="3840" height="5760">
+      <div class="img-container-wrapper">
+        <div class="responsive-img-container">
+          <img src="../../static/images/markus-spiske-y6HpQzW87Vc-unsplash.jpg" width="3840" height="5760">
+        </div>
       </div>
 
       <section class="favored-tech">
+        <section class="tech-block">
         <i class="fas fa-layer-group"></i>
         <h2>Back-End</h2>
         <ul class="skills">
@@ -30,9 +33,9 @@ export default class extends BaseView {
           <li>Express</li>
           <li>Firebase</li>
         </ul>
-      </section>
-      
-      <section class="favored-tech">
+        </section>
+
+        <section class="tech-block">
         <i class="fas fa-drafting-compass"></i>
         <h2>Front-End</h2>
         <ul class="skills">
@@ -41,6 +44,7 @@ export default class extends BaseView {
           <li>JavaScript</li>
           <li>Bootstrap</li>
         </ul>
+        </section>
       </section>
 
       <ul>
