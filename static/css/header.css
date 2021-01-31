@@ -57,10 +57,10 @@ header > nav {
   pointer-events: none;
 }
 
-#menu-toggler:checked ~ .logo-container a { /* Make logo unclickable when menu is opened */
+/* #menu-toggler:checked ~ .logo-container a { Make logo unclickable when menu is opened
   cursor: default;
   pointer-events: none;
-}
+} */
 
 #menu-toggler:checked ~ .menu {
   height: calc(100vh - 60px); /* expanded */
@@ -111,7 +111,7 @@ header > nav {
 
 .hamburger-btn {
   padding: 16px 10px;  /* to be able to click the hamburger a little bit out of it */
-  margin-right: 15px; /* margin for hamburger btn from the right side*/
+  margin-right: 15px; /* margin for hamburger btn from the right side */
   cursor: pointer;
 }
   .hamburger-slice { /* slice 2 */
@@ -196,40 +196,39 @@ header > nav {
 
 /*------------------------------- MEDIA QUERIES -------------------------------*/
 /*---------- DESKTOP ---------*/
-@media only screen and (min-width: 900px) {
-  nav {
-    height: 100px;  /* a little bit larger for desktop */
+@media (min-width: 900px) {
+  header > nav {
+    height: 65px;  /* a little bit larger for desktop */
   }
 
   .hamburger-btn {
     display: none;
   }
 
+  #menu-toggler:not(:checked) ~ .menu {
+    pointer-events: auto;
+  }
+
   .menu {
-    -webkit-box-shadow: none;
+    height: 65px;
+    flex-direction: row;
+    justify-content: flex-end;
     box-shadow: none;
-    position: relative;
     top: 0;
-    height: 100px;
     margin-right: 25px;
-    float: right;
-    -webkit-transition: none;
-    -o-transition: none;
-    transition: none;
     background: none;
-    text-align: right;
+  }
+
+  .menu li:last-child {
+    padding-bottom: 0;
   }
     .menu li {
+      opacity: 1;
       margin: 0 20px;
-      line-height: 100px;
-      display: inline-block;
-      -webkit-transition: none;
-      -o-transition: none;
+      line-height: 70px;
       transition: none;
     }
       .menu li a.active, .menu li a:hover, .menu li a:active {
-        -webkit-transition: 0.5s;
-        -o-transition: 0.5s;
         transition: 0.5s;
         color: var(--color-dark-orange);
       }

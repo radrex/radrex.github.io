@@ -117,7 +117,7 @@ function displayError(message, id) {
   let errorBox = document.getElementById(id);
   let oldPlaceholder = errorBox.placeholder;
 
-  errorBox.style.fontSize = '0.62em';
+  errorBox.style.fontSize = '0.62em'; // phones
   errorBox.value = '';
   errorBox.placeholder = message;
 
@@ -131,11 +131,12 @@ function displayInfo(message, id) {
   //TODO - font-size and transit  ions for higher resolutions (media-queries)
   let infoBox = document.getElementById(id);
   let oldValue = infoBox.value;
-  infoBox.style.fontSize = '0.5em';
+  infoBox.style.fontSize = '0.5em'; // phones
 
+  //TODO: Maybe wait for the animation first, and then show the message and wait for a couple of sec before cleaning it
   infoBox.value = message;
   setTimeout(() => {
-    infoBox.style.fontSize = '1.1em';
+    infoBox.style.fontSize = '1.1em'; // phones
     infoBox.value = oldValue;
   }, 5000);
 }
