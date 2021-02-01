@@ -784,6 +784,10 @@ form {
     font-size: 0.9em;
   }
 
+  .contact > h2 {
+    width: 70%;
+    margin: 0 auto 0.4em;
+  }
   .contact .border-box {
     width: 70%;
     margin: 10px auto 20px;
@@ -809,6 +813,12 @@ form {
     text-align: center;
   }
   .home .info-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+
     display: flex;
     flex-direction: row;
   }
@@ -827,6 +837,11 @@ form {
     margin: auto 12%;
   }
   .home .right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    
     display: flex;
     justify-content: flex-end;
   }
@@ -835,10 +850,11 @@ form {
     margin: 0;
   }
 
-
-
   .experience .timespan, .experience details, .experience .skills {
     font-size: 1em;
+  }
+  .experience .timeline {
+    padding: 0 8%;
   }
 
   .contact .border-box {

@@ -76,7 +76,7 @@
         "url": "https://github.com/radrex/SoftuniCourses/blob/master/certificates/Diploma%20for%20C%23%20Web%20Developer.pdf"
       }
     ],
-    "skills": ["HTML5", "CSS3", "Bootstrap", "C#", "MSSQL", "EF Core", "ASP.NET Core", "JavaScript", "Handlebars", "Firebase", "Webpack", "NodeJS", "Express", "C"],
+    "skills": ["HTML5", "CSS3", "Bootstrap", "C#", "MSSQL", "EF Core", "ASP.NET Core", "JavaScript", "NPM", "Sammy", "Handlebars", "Firebase", "Webpack", "NodeJS", "Express", "C"],
     "mainImgClass": "fas fa-university",
     "timespanImgClass": "fas fa-graduation-cap fa-xs"
   }

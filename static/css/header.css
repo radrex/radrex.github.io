@@ -18,7 +18,6 @@ header > nav {
   align-items: center;
   justify-content: space-between;
 
-  width: 100vw; /* full screen */
   height: 60px;
 
   background: url('../images/shattered-dark.png') repeat, -webkit-gradient(linear, left top, left bottom, from(black),color-stop(80%, #1a0c00));
@@ -56,11 +55,6 @@ header > nav {
   cursor: default;
   pointer-events: none;
 }
-
-/* #menu-toggler:checked ~ .logo-container a { Make logo unclickable when menu is opened
-  cursor: default;
-  pointer-events: none;
-} */
 
 #menu-toggler:checked ~ .menu {
   height: calc(100vh - 60px); /* expanded */
@@ -195,7 +189,7 @@ header > nav {
       }
 
 /*------------------------------- MEDIA QUERIES -------------------------------*/
-/*---------- DESKTOP ---------*/
+/*---------- FROM HAMBURGER TO LIST MENU IN NAVTGATION ---------*/
 @media (min-width: 900px) {
   header > nav {
     height: 65px;  /* a little bit larger for desktop */
@@ -210,13 +204,22 @@ header > nav {
   }
 
   .menu {
-    height: 65px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+
     flex-direction: row;
     justify-content: flex-end;
-    box-shadow: none;
+
     top: 0;
-    margin-right: 25px;
+    height: 65px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
     background: none;
+
+    font-size: 0.9em;
   }
 
   .menu li:last-child {
@@ -226,11 +229,11 @@ header > nav {
       opacity: 1;
       margin: 0 20px;
       line-height: 70px;
+      -webkit-transition: none;
+      -o-transition: none;
       transition: none;
     }
-      .menu li a.active, .menu li a:hover, .menu li a:active {
-        transition: 0.5s;
-        color: var(--color-dark-orange);
-      }
+    .menu li:last-child {
+      margin-right: 50px;
+    }
 }
-

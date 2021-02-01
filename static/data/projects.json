@@ -60,6 +60,19 @@
         "imageUrl": "../../static/icons/json.svg"
       },
       {
+        "name": "Sammy",
+        "imageUrl": "../../static/icons/sammy.svg"
+      },
+      {
+        "name": "Handlebars",
+        "imageUrl": "../../static/icons/handlebars.svg"
+      },
+      {
+        "name": "NPM",
+        "imageUrl": "../../static/icons/npm.svg"
+      },
+
+      {
         "name": "HTML",
         "imageUrl": "../../static/icons/html.svg"
       },
@@ -78,10 +91,6 @@
       {
         "name": "C",
         "imageUrl": "../../static/icons/c.svg"
-      },
-      {
-        "name": "NPM",
-        "imageUrl": "../../static/icons/npm.svg"
       }
     ],
     "functionality": [
