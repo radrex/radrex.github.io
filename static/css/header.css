@@ -42,7 +42,9 @@ header > nav {
   -ms-transform: rotate(140deg);
   transform: rotate(140deg);
   outline: 2px solid black; /* using border causing micro outline for transformed elements, so instead use outline */
-  background: url('../images/asfalt-dark.png') repeat, var(--font-color);
+  background-image: url('../images/asfalt-dark.png');
+  background-repeat: repeat;
+  background-color: var(--font-color);
   -webkit-box-shadow: inset 0px -2px 9px 0px rgba(0,0,0,0.6), 0px 0px 10px 4px rgba(0,0,0,0.5);
   box-shadow: inset 0px -2px 9px 0px rgba(0,0,0,0.6), 0px 0px 10px 4px rgba(0,0,0,0.5);
 }
@@ -55,7 +57,9 @@ header > nav {
     height: 10px;
     position: absolute;
     outline: 2px solid black; /* using border causing micro outline for transformed elements, so instead use outline */
-    background: url('../images/asfalt-dark.png') repeat, var(--color-dark-orange);
+    background-image: url('../images/asfalt-dark.png');
+    background-repeat: repeat;
+    background-color: var(--color-dark-orange);
     -webkit-box-shadow: inset 0px -2px 9px 0px rgba(0,0,0,0.6), 0px 0px 10px 4px rgba(0,0,0,0.5);
     box-shadow: inset 0px -2px 9px 0px rgba(0,0,0,0.6), 0px 0px 10px 4px rgba(0,0,0,0.5);
   }
