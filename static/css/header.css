@@ -4,6 +4,7 @@ header {
   z-index: 100;
   position: -webkit-sticky;
   position: sticky;
+  overflow: hidden; /* For ribbon */
 }
 
 header > nav {
@@ -16,7 +17,7 @@ header > nav {
 
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
 
   height: 60px;
 
@@ -27,24 +28,36 @@ header > nav {
   -webkit-box-shadow: inset 0px -2px 9px 0px rgba(0,0,0,0.6), 0px 0px 10px 4px rgba(0,0,0,0.5);
   box-shadow: inset 0px -2px 9px 0px rgba(0,0,0,0.6), 0px 0px 10px 4px rgba(0,0,0,0.5);
   border-bottom: 1px solid black;
+
+  position: relative; /* For ribbon */
 }
 
-.logo-container {
-  width: auto;
-
-  display: -webkit-box;
-  display: -ms-flexbox;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-
-  display: flex;
-  align-items: center;
+.ribbon {
+  top: 12px;
+  left: -85px;
+  width: 180px;
+  height: 10px;
+  position: absolute;
+  -webkit-transform: rotate(140deg);
+  -ms-transform: rotate(140deg);
+  transform: rotate(140deg);
+  outline: 2px solid black; /* using border causing micro outline for transformed elements, so instead use outline */
+  background: url('../images/asfalt-dark.png') repeat, var(--font-color);
+  -webkit-box-shadow: inset 0px -2px 9px 0px rgba(0,0,0,0.6), 0px 0px 10px 4px rgba(0,0,0,0.5);
+  box-shadow: inset 0px -2px 9px 0px rgba(0,0,0,0.6), 0px 0px 10px 4px rgba(0,0,0,0.5);
 }
-  .logo-container > a {
-    font-size: 1.2em;
-    margin-left: 20px; /* margin for logo img from the left side */
-    color: var(--color-dark-orange);
-    text-shadow: 0px 0px 10px rgb(0, 0, 0), -2px -2px 3px rgb(0, 0, 0);
+  .ribbon::before {
+    content: "";
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    top: -20px;
+    width: 180px;
+    height: 10px;
+    position: absolute;
+    outline: 2px solid black; /* using border causing micro outline for transformed elements, so instead use outline */
+    background: url('../images/asfalt-dark.png') repeat, var(--color-dark-orange);
+    -webkit-box-shadow: inset 0px -2px 9px 0px rgba(0,0,0,0.6), 0px 0px 10px 4px rgba(0,0,0,0.5);
+    box-shadow: inset 0px -2px 9px 0px rgba(0,0,0,0.6), 0px 0px 10px 4px rgba(0,0,0,0.5);
   }
 
 #menu-toggler {
@@ -194,6 +207,14 @@ header > nav {
   header > nav {
     height: 65px;  /* a little bit larger for desktop */
   }
+
+  .ribbon {
+    height: 12px;
+  }
+    .ribbon::before {
+      top: -22px;
+      height: 12px;
+    }
 
   .hamburger-btn {
     display: none;
