@@ -208,6 +208,10 @@ header > nav {
 /*------------------------------- MEDIA QUERIES -------------------------------*/
 /*---------- FROM HAMBURGER TO LIST MENU IN NAVTGATION ---------*/
 @media (min-width: 900px) {
+  #menu-toggler:checked ~ .menu {
+    height: calc(100vh - 65px); /* expanded */
+  }
+
   header > nav {
     height: 65px;  /* a little bit larger for desktop */
   }

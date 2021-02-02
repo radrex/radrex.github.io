@@ -14,13 +14,13 @@ export default class extends BaseView {
       <ul>
         ${projects.map(x => `
           <li>
-            <div class="info">
+            <div class="info-box">
               <h2>${x[1].title}</h2>
               <p>${x[1].preview.description}</p>
               <a id="${x[0]}" class="btn btn-medium" href="/project/${x[0]}" data-link data-obj="${btoa(JSON.stringify(x[1]))}">Check it out</a>
             </div>
 
-            <div class="second">
+            <div class="img-box">
               <div class="responsive-img-container" style="padding-bottom:${x[1].preview.imgHeight / (x[1].preview.imgWidth / 100)}%">
                 <img src="${x[1].preview.imgUrl}" width="${x[1].preview.imgWidth}" height="${x[1].preview.imgHeight}">
               </div>
