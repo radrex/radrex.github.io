@@ -21,7 +21,42 @@ footer {
   -webkit-box-shadow: inset 0px 3px 9px 0px rgba(0,0,0,0.6);
   box-shadow: inset 0px 3px 9px 0px rgba(0,0,0,0.6);
   border-top: 1px solid black;
+
+  overflow: hidden; /* For ribbon */
+  position: relative; /* For ribbon */
 }
+  .ribbon-bot {
+    bottom: 12px;
+    right: -85px;
+    width: 180px;
+    height: 10px;
+    position: absolute;
+    -webkit-transform: rotate(140deg);
+    -ms-transform: rotate(140deg);
+    transform: rotate(140deg);
+    outline: 2px solid black; /* using border causing micro outline for transformed elements, so instead use outline */
+    background-image: url('../images/asfalt-dark.png');
+    background-repeat: repeat;
+    background-color: var(--font-color);
+    -webkit-box-shadow: inset 0px -2px 9px 0px rgba(0,0,0,0.6), 0px 0px 10px 4px rgba(0,0,0,0.5);
+    box-shadow: inset 0px -2px 9px 0px rgba(0,0,0,0.6), 0px 0px 10px 4px rgba(0,0,0,0.5);
+  }
+    .ribbon-bot::before {
+      content: "";
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      bottom: -20px;
+      width: 180px;
+      height: 10px;
+      position: absolute;
+      outline: 2px solid black; /* using border causing micro outline for transformed elements, so instead use outline */
+      background-image: url('../images/asfalt-dark.png');
+      background-repeat: repeat;
+      background-color: var(--color-dark-orange);
+      -webkit-box-shadow: inset 0px -2px 9px 0px rgba(0,0,0,0.6), 0px 0px 10px 4px rgba(0,0,0,0.5);
+      box-shadow: inset 0px -2px 9px 0px rgba(0,0,0,0.6), 0px 0px 10px 4px rgba(0,0,0,0.5);
+    }
+
   footer p, footer h3 {
     width: 100%;
   }
@@ -81,11 +116,22 @@ footer {
     border-top: 2px solid var(--color-dark-gray);
   }
 
+
+
 /*---------- DESKTOP ----------*/
 @media (min-width: 1024px) and (min-height: 600px) {
   footer {
     padding: 1.5em 4.5em;
   }
+
+  .ribbon-bot {
+    height: 12px;
+  }
+    .ribbon-bot::before {
+      bottom: -22px;
+      height: 12px;
+    }
+
   footer h3 {
     font-size: 2.2em;
   }
