@@ -13,7 +13,7 @@ export default class extends BaseView {
       <h1>Experience</h1>
       <section class="timeline">
         ${data.map((x, idx) => `
-          <div class="timeline-block">
+          <div class="timeline-block" style="--logo-url: url('${x[1].logoUrl}');">
             <div class="imgBlock"><i class="${x[1].mainImgClass}"></i></div>
             <h2>${x[1].place}</h2>
             <div class="timespan">

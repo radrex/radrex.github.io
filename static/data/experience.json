@@ -6,7 +6,8 @@
     "summary": ["Profiled high school with intensive study of language subjects."],
     "skills": ["English", "French"],
     "mainImgClass": "fas fa-university",
-    "timespanImgClass": "fas fa-graduation-cap fa-xs"
+    "timespanImgClass": "fas fa-graduation-cap fa-xs",
+    "logoUrl": "../icons/eg.svg"
   },
   "2": {
     "place": "University of National and World Economy",
@@ -15,7 +16,8 @@
     "summary": ["Studied general economic subjects and statistics, computing system architectures, internet technologies, computer networks and telecommunications, operating systems, database programming.", "Studied technologies and models for building web and mobile systems and applications. Enterprise resource management systems, business intelligent systems.", "Developed, designed UI and managed integrated information systems based on client-server technologies."],
     "skills": ["MS Excel", "MS Access", "HTML5", "CSS3", "Java", "C#", "MSSQL", "MySQL", "JDBC", "WinForms", "WPF", "ADO.NET", "Tableau"],
     "mainImgClass": "fas fa-university",
-    "timespanImgClass": "fas fa-graduation-cap fa-xs"
+    "timespanImgClass": "fas fa-graduation-cap fa-xs",
+    "logoUrl": "../icons/unwe.svg"
   },
   "3": {
     "place": "Software University",
@@ -78,6 +80,7 @@
     ],
     "skills": ["HTML5", "CSS3", "Bootstrap", "C#", "MSSQL", "EF Core", "ASP.NET Core", "JavaScript", "NPM", "Sammy", "Handlebars", "Firebase", "Webpack", "NodeJS", "Express", "C"],
     "mainImgClass": "fas fa-university",
-    "timespanImgClass": "fas fa-graduation-cap fa-xs"
+    "timespanImgClass": "fas fa-graduation-cap fa-xs",
+    "logoUrl": "../icons/software-university-logo.svg"
   }
 }

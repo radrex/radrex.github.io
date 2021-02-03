@@ -1056,4 +1056,66 @@ form {
   .project .project-showcase p {
     font-size: 1.3em;
   }
+
+  .experience h1 {
+    font-size: 2.9em;
+  }
+  .experience .timeline {
+    padding: 0;
+    margin-top: 100px;
+  }
+  .experience .timeline::before {
+    left: 50%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .experience .timeline-block {
+    margin: 0;
+  }
+  .experience .timeline-block h2 {
+    font-size: 1.7em;
+  }
+  .experience .imgBlock i {
+    font-size: 1.5em;
+    padding-top: 5px;
+    padding-left: 1px;
+  }
+  .experience .timeline-block:nth-child(odd) {
+    margin-right: calc(50% + 40px);
+  }
+  .experience .timeline-block:nth-child(odd)::before {
+    left: 100%;
+    border-right: none;
+    border-left: 9px solid rgba(0,0,0,0.5);
+  }
+  .experience .timeline-block:nth-child(odd) .imgBlock {
+    left: auto;
+    right: -60px;
+    top: 2px;
+    width: 34px;
+    height: 34px;
+  }
+  .experience .timeline-block:nth-child(odd)::after {
+    position: absolute;
+    top: 20%;
+    left: 150%;
+    opacity: 0.85;
+    content: var(--logo-url);
+  }
+  .experience .timeline-block:nth-child(even)::after {
+    position: absolute;
+    top: 20%;
+    left: -80%;
+    opacity: 0.85;
+    content: var(--logo-url);
+  }
+  .experience .timeline-block:nth-child(even) {
+    margin-left: calc(50% + 40px);
+  }
+  .experience .timeline-block:nth-child(even) .imgBlock {
+    left: -56px;
+    top: 2px;
+    width: 34px;
+    height: 34px;
+  }
 }
