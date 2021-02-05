@@ -13,84 +13,83 @@
     "techStack": [
       {
         "name": "C#",
-        "imageUrl": "../../static/icons/csharp.svg"
+        "imgUrl": "../../static/icons/csharp.svg"
       },
       {
         "name": ".NET Core",
-        "imageUrl": "../../static/icons/net-core.svg"
+        "imgUrl": "../../static/icons/net-core.svg"
       },
       {
         "name": "MSSQL",
-        "imageUrl": "../../static/icons/mssql.svg"
+        "imgUrl": "../../static/icons/mssql.svg"
       },
       {
         "name": "nUnit",
-        "imageUrl": "../../static/icons/nUnit.svg"
+        "imgUrl": "../../static/icons/nUnit.svg"
       },
       {
         "name": "xUnit",
-        "imageUrl": "../../static/icons/xUnit.svg"
+        "imgUrl": "../../static/icons/xUnit.svg"
       },
       {
         "name": "Express",
-        "imageUrl": "../../static/icons/express.svg"
+        "imgUrl": "../../static/icons/express.svg"
       },
       {
         "name": "Firebase",
-        "imageUrl": "../../static/icons/firebase.svg"
+        "imgUrl": "../../static/icons/firebase.svg"
       },
       {
         "name": "NodeJS",
-        "imageUrl": "../../static/icons/nodejs.svg"
+        "imgUrl": "../../static/icons/nodejs.svg"
       },
       {
         "name": "Git",
-        "imageUrl": "../../static/icons/git.svg"
+        "imgUrl": "../../static/icons/git.svg"
       },
       {
         "name": "Mocha",
-        "imageUrl": "../../static/icons/mocha.svg"
+        "imgUrl": "../../static/icons/mocha.svg"
       },
       {
         "name": "Chai",
-        "imageUrl": "../../static/icons/chai.svg"
+        "imgUrl": "../../static/icons/chai.svg"
       },
       {
         "name": "JSON",
-        "imageUrl": "../../static/icons/json.svg"
+        "imgUrl": "../../static/icons/json.svg"
       },
       {
         "name": "Sammy",
-        "imageUrl": "../../static/icons/sammy.svg"
+        "imgUrl": "../../static/icons/sammy.svg"
       },
       {
         "name": "Handlebars",
-        "imageUrl": "../../static/icons/handlebars.svg"
+        "imgUrl": "../../static/icons/handlebars.svg"
       },
       {
         "name": "NPM",
-        "imageUrl": "../../static/icons/npm.svg"
+        "imgUrl": "../../static/icons/npm.svg"
       },
-
       {
         "name": "HTML",
-        "imageUrl": "../../static/icons/html.svg"
+        "imgUrl": "../../static/icons/html.svg"
       },
       {
         "name": "CSS",
-        "imageUrl": "../../static/icons/css.svg"
+        "imgUrl": "../../static/icons/css.svg"
       },
       {
         "name": "JavaScript",
-        "imageUrl": "../../static/icons/js.svg"
+        "imgUrl": "../../static/icons/js.svg"
       },
       {
         "name": "Bootstrap",
-        "imageUrl": "../../static/icons/bootstrap.svg"
+        "imgUrl": "../../static/icons/bootstrap.svg"
       },
       {
         "name": "C",
-        "imageUrl": "../../static/icons/c.svg"
+        "imgUrl": "../../static/icons/c.svg"
       }
     ],
     "functionality": [

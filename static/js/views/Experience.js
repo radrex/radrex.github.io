@@ -12,10 +12,10 @@ export default class extends BaseView {
       <section class="timeline">
         ${data.map((x, idx) => `
           <div class="timeline-block" style="--logo-url: url('${x[1].logoUrl}');">
-            <div class="imgBlock"><i class="${x[1].mainImgClass}"></i></div>
+            <div class="imgBlock"><i class="${x[1].mainIconClass}"></i></div>
             <h2>${x[1].place}</h2>
             <div class="timespan">
-              <span><i class="${x[1].timespanImgClass}"></i> ${x[1].field} </span>
+              <span><i class="${x[1].timespanIconClass}"></i> ${x[1].field} </span>
               <span><i class="far fa-calendar-check"></i> ${x[1].timespan}</span>
             </div>
             <details ${idx === data.length-1 ? 'open' : ''}>

@@ -22,7 +22,7 @@ export default class extends BaseView {
         <h3>Tech Stack</h3>
         <ul>
           ${project.techStack.map(x =>
-            `<li><img src="${x.imageUrl}"></li>`
+            `<li><img src="${x.imgUrl}"></li>`
           ).join('')}
         </ul>
       </section>

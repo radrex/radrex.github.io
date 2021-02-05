@@ -20,7 +20,7 @@ export default class extends BaseView {
         <div class="img-block">
           <div class="img-container-wrapper">
             <div class="responsive-img-container">
-              <img src="../../static/images/markus-spiske-y6HpQzW87Vc-unsplash.jpg" width="3840" height="5760">
+              <img src="../../static/images/markus-spiske-y6HpQzW87Vc-unsplash.jpg" alt="Picture of Me" width="3840" height="5760">
             </div>
           </div>
         </div>
