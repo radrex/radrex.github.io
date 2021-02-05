@@ -4,6 +4,14 @@ import Project from './views/Project.js';
 import Contact from './views/Contact.js';
 import Experience from './views/Experience.js';
 
+//----- LOAD JSON DATA ASYNC ONLY ONCE ON INITIALIZATION -----
+let data = async function loadData() {
+  return {
+    projects: Object.entries(await fetch('../../../static/data/projects.json').then(res => res.json())),
+    experience: Object.entries(await fetch('../../../static/data/experience.json').then(res => res.json()))
+  }
+}();
+//---------------------------------------------------------------------------------------------------------
 const pathToRegex = path => new RegExp('^' + path.replace(/\//g, '\\/').replace(/:\w+/g, '(.+)') + "$");
 const getParams = match => {
   const values = match.result.slice(1);
@@ -49,7 +57,13 @@ const router = async () => {
   const view = new match.route.view(getParams(match));
   let mainElement = document.querySelector('#app');
   mainElement.className = `${location.pathname === '/' ? 'home' : location.pathname.includes('project/') ? 'project' : location.pathname.slice(1)}`; /* setting class for the current page (for easier CSS styling) */
-  mainElement.innerHTML = await view.getHtml();
+  if (location.pathname === '/work') {
+    mainElement.innerHTML = await view.getHtml((await data).projects);
+  } else if (location.pathname === '/experience') {
+    mainElement.innerHTML = await view.getHtml((await data).experience);
+  } else {
+    mainElement.innerHTML = await view.getHtml();
+  }
 };
 
 window.addEventListener('popstate', router);

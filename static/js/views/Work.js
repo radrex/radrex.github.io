@@ -6,13 +6,11 @@ export default class extends BaseView {
     this.setTitle('My Work | Radostin Stoychev');
   }
 
-  async getHtml() {
-    //TODO Load projects only once maybe in constructor
-    let projects = Object.entries(await fetch('../../../static/data/projects.json').then(res => res.json()));
+  async getHtml(data) {
     return `
       <h1>My Work</h1>
       <ul>
-        ${projects.map(x => `
+        ${data.map(x => `
           <li>
             <div class="info-box">
               <h2>${x[1].title}</h2>

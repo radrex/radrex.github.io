@@ -6,9 +6,7 @@ export default class extends BaseView {
     this.setTitle('Experience | Radostin Stoychev');
   }
 
-  async getHtml() {
-    //TODO Load projects only once maybe in constructor
-    let data = Object.entries(await fetch('../../../static/data/experience.json').then(res => res.json()));
+  async getHtml(data) {
     return `
       <h1>Experience</h1>
       <section class="timeline">
