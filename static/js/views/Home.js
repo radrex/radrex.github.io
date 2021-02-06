@@ -11,7 +11,7 @@ export default class extends BaseView {
       <section class="info-wrapper">
         <div class="info-block">
           <h1>Hey, I'm Radostin.</h1>
-          <h2>A web developer based in Sofia, Bulgaria. Specialized in front and back-end.</h2>
+          <h2>A software developer based in Sofia, Bulgaria. Specialized in front and back-end.</h2>
           <h2>I'm really passionate about all sorts of technology. Always looking forward to collaborate on thought-provoking and intriguing projects with enthusiasm to engage in the full process.</h2>
           
           <a class="btn btn-large" href="/work" data-link>My Projects</a>

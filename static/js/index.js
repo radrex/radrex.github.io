@@ -115,7 +115,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         body: JSON.stringify(messageData),
       })
-      .then(displayInfo('✔️', 'successfully-send'))
+      .then(displayInfo('Thank you! ✔️', 'successfully-send'))
       .catch(err => console.log(err)); //TODO handle error with a notification or something
   
       navigateTo('/contact');
