@@ -115,7 +115,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         body: JSON.stringify(messageData),
       })
-      .then(displayInfo('Me when I receive message from you 👁️👄👁️', 'successfully-send'))
+      .then(displayInfo('✔️', 'successfully-send'))
       .catch(err => console.log(err)); //TODO handle error with a notification or something
   
       navigateTo('/contact');
@@ -127,11 +127,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
 //------------------------- NOTIFICATIONS -----------------------------------
 function displayError(message, id) {
-  //TODO - font-size and transitions for higher resolutions (media-queries)
   let errorBox = document.getElementById(id);
   let oldPlaceholder = errorBox.placeholder;
 
-  errorBox.style.fontSize = '0.62em'; // phones
+  if (window.matchMedia("(min-width: 1024px) and (min-height: 600px)").matches) {
+    errorBox.style.fontSize = '1.4em'; // DESKTOP / LAPTOPS
+  } else if (window.matchMedia("(min-width: 600px) and (min-height: 960px), (min-width: 960px) and (min-height: 600px)").matches) {
+    errorBox.style.fontSize = '1em'; // TABLETS
+  } else {
+    errorBox.style.fontSize = '0.62em'; // PHONES
+  }
+
   errorBox.value = '';
   errorBox.placeholder = message;
 
@@ -142,15 +148,20 @@ function displayError(message, id) {
 }
 
 function displayInfo(message, id) {
-  //TODO - font-size and transit  ions for higher resolutions (media-queries)
   let infoBox = document.getElementById(id);
   let oldValue = infoBox.value;
-  infoBox.style.fontSize = '0.5em'; // phones
 
-  //TODO: Maybe wait for the animation first, and then show the message and wait for a couple of sec before cleaning it
+  if (window.matchMedia("(min-width: 1024px) and (min-height: 600px)").matches) {
+    infoBox.style.fontSize = '1.4em'; // DESKTOP / LAPTOPS
+  } else if (window.matchMedia("(min-width: 600px) and (min-height: 960px), (min-width: 960px) and (min-height: 600px)").matches) {
+    infoBox.style.fontSize = '1em'; // TABLETS
+  } else {
+    infoBox.style.fontSize = '0.5em'; // PHONES
+  }
+
   infoBox.value = message;
   setTimeout(() => {
-    infoBox.style.fontSize = '1.1em'; // phones
+    infoBox.style.fontSize = '1em';
     infoBox.value = oldValue;
-  }, 5000);
+  }, 7000);
 }

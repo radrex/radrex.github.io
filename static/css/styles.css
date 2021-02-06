@@ -734,6 +734,12 @@ form {
       transition: all -2s ease-in-out;
     }
 
+    .notransition {
+      -webkit-transition: none !important;
+      -moz-transition: none !important;
+      -o-transition: none !important;
+      transition: none !important;
+    }
 /*---------- IMAGES ----------*/
 .responsive-img-container {
   height: 0;
