@@ -116,8 +116,6 @@ footer {
     border-top: 2px solid var(--color-dark-gray);
   }
 
-
-
 /*---------- DESKTOP ----------*/
 @media (min-width: 1024px) and (min-height: 600px) {
   footer {

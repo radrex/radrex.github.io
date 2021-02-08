@@ -173,6 +173,24 @@
   font-family: "Font Awesome 5 Free";
 }
 
+.work #pagination-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;  
+}
+
+.work #pagination-wrapper button {
+  margin: 0.5em;
+}
+
 /*---------- PROJECT DYNAMIC PAGE ----------*/
 .project {
   display: -webkit-box;

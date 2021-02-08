@@ -1,5 +1,6 @@
-{
-  "1": {
+[
+  {
+    "id" : 1,
     "place": "Foreign Language High School Acad. Lyudmil Stoyanov",
     "field": "High school diploma",
     "timespan": "September 2009 - June 2014",
@@ -9,7 +10,8 @@
     "timespanIconClass": "fas fa-graduation-cap fa-xs",
     "logoUrl": "../icons/eg.svg"
   },
-  "2": {
+  {
+    "id" : 2,
     "place": "University of National and World Economy",
     "field": "Bachelor in Business Informatics and Communications",
     "timespan": "September 2014 - October 2018",
@@ -19,7 +21,8 @@
     "timespanIconClass": "fas fa-graduation-cap fa-xs",
     "logoUrl": "../icons/unwe.svg"
   },
-  "3": {
+  {
+    "id" : 3,
     "place": "Software University",
     "field": "C# Web Developer Diploma",
     "timespan": "January 2019 - Present",
@@ -83,4 +86,4 @@
     "timespanIconClass": "fas fa-graduation-cap fa-xs",
     "logoUrl": "../icons/software-university-logo.svg"
   }
-}
+]

@@ -7,7 +7,7 @@ export default class {
     document.title = title;
   }
 
-  async getHtml(data) {
+  async renderHtml(targetElement, data) {
     return "";
   }
 }

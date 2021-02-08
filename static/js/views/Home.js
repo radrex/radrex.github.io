@@ -6,8 +6,8 @@ export default class extends BaseView {
     this.setTitle('About Me | Radostin Stoychev');
   }
 
-  async getHtml() {
-    return `
+  async renderHtml(targetElement, data) {
+    targetElement.innerHTML = `
       <section class="info-wrapper">
         <div class="info-block">
           <h1>Hey, I'm Radostin.</h1>

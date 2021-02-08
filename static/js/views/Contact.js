@@ -6,8 +6,8 @@ export default class extends BaseView {
     this.setTitle('Contact | Radostin Stoychev');
   }
 
-  async getHtml() {
-    return `
+  async renderHtml(targetElement, data) {
+    targetElement.innerHTML = `
       <h1>Contact Me</h1>
       <h2>If you’d like to chat about a project please fill in the form below and I’ll get back within 1-2 days.</h2>
     

@@ -7,8 +7,8 @@ import Experience from './views/Experience.js';
 //----- LOAD JSON DATA ASYNC ONLY ONCE ON INITIALIZATION -----
 let data = async function loadData() {
   return {
-    projects: Object.entries(await fetch('../../../static/data/projects.json').then(res => res.json())),
-    experience: Object.entries(await fetch('../../../static/data/experience.json').then(res => res.json()))
+    projects: await fetch('../../../static/data/projects.json').then(res => res.json()),
+    experience: await fetch('../../../static/data/experience.json').then(res => res.json())
   }
 }();
 //---------------------------------------------------------------------------------------------------------
@@ -20,7 +20,6 @@ const getParams = match => {
   return Object.fromEntries(keys.map((key, i) => {
     return [key, values[i]];
   }));
-
 };
 
 const navigateTo = url => {
@@ -58,11 +57,11 @@ const router = async () => {
   let mainElement = document.querySelector('#app');
   mainElement.className = `${location.pathname === '/' ? 'home' : location.pathname.includes('project/') ? 'project' : location.pathname.slice(1)}`; /* setting class for the current page (for easier CSS styling) */
   if (location.pathname === '/work') {
-    mainElement.innerHTML = await view.getHtml((await data).projects);
+    await view.renderHtml(mainElement, (await data).projects);
   } else if (location.pathname === '/experience') {
-    mainElement.innerHTML = await view.getHtml((await data).experience);
+    await view.renderHtml(mainElement, (await data).experience);
   } else {
-    mainElement.innerHTML = await view.getHtml();
+    await view.renderHtml(mainElement);
   }
 };
 

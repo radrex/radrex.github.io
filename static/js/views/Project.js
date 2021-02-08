@@ -7,9 +7,9 @@ export default class extends BaseView {
     this.setTitle(`${this.projectId.split('-').join(' ')} | Radostin Stoychev`);
   }
 
-  async getHtml() {
+  async renderHtml(targetElement, data) {
     let project = JSON.parse(atob(document.getElementById(this.projectId).getAttribute('data-obj')));
-    return `
+    targetElement.innerHTML = `
       <h1>${project.title}</h1>
       <section class="border-box">
         <h2>${project.definition}</h2>
