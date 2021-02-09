@@ -764,7 +764,7 @@ form {
 .responsive-img-container {
   height: 0;
   position:relative;
-  padding-bottom: 150%; /* Changes depending on img aspect-ratio in the views as inline html */
+  /* padding-bottom: 150%; Changes depending on img aspect-ratio in the views as inline html */
   background-color: var(--color-gray);
   border: 10px solid var(--color-gray);
   border-radius: 10px;
