@@ -176,6 +176,7 @@
 .work #pagination-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
+  -ms-flex-wrap: wrap;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
@@ -183,8 +184,9 @@
   -ms-flex-pack: center;
 
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
-  justify-content: center;  
+  justify-content: center;
 }
 
 .work #pagination-wrapper button {
@@ -811,7 +813,7 @@ form {
   -o-transition-duration: 0.4s;
   transition-duration: 0.4s;
 }
-  .btn:hover, .btn:active {
+  .btn:hover {
     background-color: var(--color-black);
   }
 

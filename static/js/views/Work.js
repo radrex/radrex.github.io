@@ -42,7 +42,11 @@ export default class extends BaseView {
       </li>
     `).join('');
 
-    await this.renderButtons(projects.pages);
+    this.renderButtons(projects.pages);
+    let selectedPageBtn = document.querySelector(`button[value="${this.state.page}"]`);
+    selectedPageBtn.disabled = true; // DISABLE currently selected page button, change background-color and set cursor to default
+    selectedPageBtn.style.backgroundColor = '#0F0E0E';
+    selectedPageBtn.style.cursor = 'default';
   }
 
   async paginateProjects(data, page, items) {
@@ -56,7 +60,7 @@ export default class extends BaseView {
     }
   }
 
-  async renderButtons(pages) {
+  renderButtons(pages) {
     let wrapper = document.getElementById('pagination-wrapper');
     wrapper.innerHTML = '';
 
@@ -81,19 +85,16 @@ export default class extends BaseView {
     }
 
     if (this.state.page !== 1) {
-      wrapper.innerHTML = `<button value="${1}" class="page btn btn-small">&#171; First</button>` + wrapper.innerHTML;
+      wrapper.innerHTML = `<button value="${1}" class="page btn btn-small"><i class="fas fa-angle-double-left"></i></button>` + wrapper.innerHTML;
     }
 
     if (this.state.page !== pages) {
-      wrapper.innerHTML += `<button value="${pages}" class="page btn btn-small">Last &#187;</button>`;
+      wrapper.innerHTML += `<button value="${pages}" class="page btn btn-small"><i class="fas fa-angle-double-right"></i></button>`;
     }
 
     Array.from(document.getElementsByClassName('page')).forEach(x => x.addEventListener('click', evt => {
       let ul = document.getElementById('projects').innerHTML = '';
       this.state.page = +[evt.target.value];
-
-      //TODO: tweak styles for active page...
-
       this.renderProjects();
       window.scrollTo(0, 0); // Scroll to top after render
     }));
