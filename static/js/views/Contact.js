@@ -9,7 +9,7 @@ export default class extends BaseView {
   async renderHtml(targetElement, data) {
     targetElement.innerHTML = `
       <h1>Contact Me</h1>
-      <h2>If you’d like to chat about a project please fill in the form below and I’ll get back within 1-2 days.</h2>
+      <h2>If you’d like to chat about a project please fill in the form below and I’ll get back within 1-2 days. Or you can contact me via linkedin or telegram, links for which can be found at the end of the page.</h2>
     
       <section class="border-box">
         <h3>Status</h3>
