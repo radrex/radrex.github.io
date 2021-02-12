@@ -12,10 +12,8 @@
 
 <br/>
 
---- 
-
 <p align='center'>
-  For now I'm using it for project and experience showcasing, but in the future I might add blog posts as well. 📮 So stay tuned. 👀
+  For now I'm using it for project and experience showcasing, but in the future I might add blog posts as well. <br /> 📮 So stay tuned. 👀
 </p>
 
 ---
@@ -30,6 +28,5 @@
 ---
 
 <p align='center'>
-  <br/>
   <img src="https://badges.pufler.dev/visits/radrex/radrex.github.io">
 </p>
