@@ -4,7 +4,7 @@
 
 <h2 align='center'>
   Welcome to my
-    <a href="https://radrex.github.io/">
+    <a target="_blank" rel="noopener noreferrer" href="https://radrex.github.io/">
       <img alt="Twitter URL" src="https://img.shields.io/twitter/url?label=Official%20Website&logo=GitHub&url=https%3A%2F%2Fradrex.github.io%2F">
     </a>
   repository.
