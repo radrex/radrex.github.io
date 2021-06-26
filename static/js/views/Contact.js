@@ -13,8 +13,8 @@ export default class extends BaseView {
     
       <section class="border-box">
         <h3>Status</h3>
-        <h4>Available</h4>
-        <p>I'm currently on a job hunt and taking on side projects.</p>
+        <h4>Working from Home</h4>
+        <p>I'm currently going through a .NET developer apprenticeship.</p>
       </section>
 
       <section class="mac-window">
