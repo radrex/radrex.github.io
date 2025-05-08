@@ -85,5 +85,27 @@
     "mainIconClass": "fas fa-university",
     "timespanIconClass": "fas fa-graduation-cap fa-xs",
     "logoUrl": "../icons/software-university-logo.svg"
+  },
+  {
+    "id" : 4,
+    "place": "INDEAVR",
+    "field": "Junior .NET Developer",
+    "timespan": "July 2021 - December 2023",
+    "summary": ["Worked with EpiServer/Optimizely CMS to extend its functionality based on client requirements by customizing reusable components with Blocks and Pages.", "Led the development of a content migration for moving data from older EpiServer version to latest Optimizely version.", "Used PDFsharp, MigraDoc, HtmlRenderer,PdfSharp, iText libraries to work with various PDF generation related tasks (populating predefined AcroField templates, generating catalogs of products, converting RichText fields to PDF files, etc.).", "Wrote plugins for the EpiServer/Optimizely CMS to extend its functionality."],
+    "skills": ["EpiServer/Optimizely", "C#", ".NET Framework 4.6.2", ".NET 6", "MVC", "Razor Pages", "HTML5", "CSS3", "JavaScript", "PDFsharp & MigraDoc", "iText", "HtmlRenderer.PdfSharp"],
+    "mainIconClass": "fas fa-solid fa-briefcase",
+    "timespanIconClass": "fas fa-solid fa-code",
+    "logoUrl": "../icons/indeavr.svg"
+  },
+  {
+    "id" : 5,
+    "place": "INDEAVR",
+    "field": "Full-Stack .NET Developer",
+    "timespan": "January 2024 - February 2025",
+    "summary": ["Led development and modernization of an HR project using .NET8 with controller-based Web API, React + TypeScript, Azure and Microsoft Graph API.", "Worked with Azure Functions with CRON expressions to schedule and send recurring, rule-based emails with options for email templatization using an Abstract Factory, etc.", "Built fully custom React components for differnt requirement modules which included scheduling logic, targeted groups, recurring intervals and reporting. In addition to the custom built components, used FluentUI components, React Multi Date Picker components, MSAL and other frontend libraries."],
+    "skills": [".NET8", "C#", "ASP.NET Core", "EF Core", "Web API", "Azure (App Services, SQL databases, Storage, Functions)", "Microsoft Graph API", "HTML5", "CSS3", "SASS", "JavaScript", "React + TypeScript", "React Router", "React-AAD-MSAL,", "MSAL", "React Redux", "React Multi Date Picker"],
+    "mainIconClass": "fas fa-solid fa-briefcase",
+    "timespanIconClass": "fas fa-solid fa-code",
+    "logoUrl": "../icons/indeavr.svg"
   }
 ]

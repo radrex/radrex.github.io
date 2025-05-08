@@ -11,7 +11,7 @@ export default class extends BaseView {
       <section class="info-wrapper">
         <div class="info-block">
           <h1>Hey, I'm Radostin.</h1>
-          <h2>A junior software developer based in Sofia, Bulgaria. Specialized in front and back-end.</h2>
+          <h2>A full-stack .NET software developer based in Bulgaria. Specialized in front and back-end.</h2>
           <h2>I'm really passionate about all sorts of technology. Always looking forward to collaborate on thought-provoking and intriguing projects with enthusiasm to engage in the full process.</h2>
           
           <a class="btn btn-large" href="/work" data-link>My Projects</a>
@@ -31,13 +31,16 @@ export default class extends BaseView {
         <i class="fas fa-layer-group"></i>
         <h2>Back-End</h2>
         <ul class="skills">
+          <li>.NET</li>
           <li>C#</li>
           <li>MSSQL</li>
-          <li>EF Core</li>
+          <li>Web API</li>
           <li>ASP.NET Core</li>
-          <li>NodeJS</li>
-          <li>Express</li>
-          <li>Firebase</li>
+          <li>EF Core</li>
+          <li>Microsoft Graph API</li>
+          <li>PDFsharp & MigraDoc</li>
+          <li>iText</li>
+          <li>Azure (App Services, SQL databases, Storage, Functions)</li>
         </ul>
         </section>
 
@@ -47,7 +50,16 @@ export default class extends BaseView {
         <ul class="skills">
           <li>HTML5</li>
           <li>CSS3</li>
+          <li>SASS</li>
           <li>JavaScript</li>
+          <li>Blazor</li>
+          <li>React</li>
+          <li>TypeScript</li>
+          <li>React Router</li>
+          <li>React AAD-MSAL, MSAL</li>
+          <li>React Redux</li>
+          <li>FluentUI</li>
+          <li>React Multi Date Picker</li>
           <li>Bootstrap</li>
         </ul>
         </section>
